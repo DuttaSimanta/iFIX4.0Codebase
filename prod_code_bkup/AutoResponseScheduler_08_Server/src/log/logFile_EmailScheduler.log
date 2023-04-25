@@ -1,0 +1,30 @@
+2022/01/13 17:00:18 logger.go:54: LogFile : D:/Api's/API/TicketDispatcherBot/src/log/logFile_EmailScheduler.log
+2022/01/13 17:00:18 StartPoint.go:34: ===========================Scheduler Started===============
+2022/01/13 17:00:38 StartPoint.go:29: ===========================Dispatcher BOT Started===============
+2022/01/13 17:00:38 dbconfig.go:27: dbConn======>  <nil>
+2022/01/13 17:00:38 dbconfig.go:38: ifix:Staging@4321@tcp(172.17.0.1:3306)/iFIX
+2022/01/13 17:00:38 dbconfig.go:41: Connection Object=====> &{0 0x11d922e0 0 {0 0} [] map[] 0 0 0x11d9a0c0 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x9c4dc0}
+2022/01/13 17:00:38 dbconfig.go:46: DB Connected!!!
+2022/01/13 17:00:38 dbconfig.go:50: DbConn in Else condition =======> &{0 0x11d922e0 0 {0 0} [] map[] 0 0 0x11d9a0c0 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x9c4dc0}
+2022/01/13 17:00:58 StartPoint.go:29: ===========================Dispatcher BOT Started===============
+2022/01/13 17:00:58 dbconfig.go:50: DbConn in Else condition =======> &{0 0x11d922e0 0 {0 0} [] map[] 0 1 0x11d9a0c0 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x9c4dc0}
+2022/01/13 17:01:07 TicketDispatcherBotDao.go:16: dial tcp 172.17.0.1:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2022/01/13 17:01:07 TicketDispatcherBotModel.go:40: Unable to fetch bot user
+2022/01/13 17:01:18 StartPoint.go:29: ===========================Dispatcher BOT Started===============
+2022/01/13 17:01:18 dbconfig.go:50: DbConn in Else condition =======> &{0 0x11d922e0 0 {0 0} [] map[] 0 2 0x11d9a0c0 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x9c4dc0}
+2022/01/13 17:01:19 TicketDispatcherBotDao.go:16: dial tcp 172.17.0.1:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2022/01/13 17:01:19 TicketDispatcherBotModel.go:40: Unable to fetch bot user
+2022/01/13 17:01:28 TicketDispatcherBotDao.go:44: dial tcp 172.17.0.1:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2022/01/13 17:01:28 TicketDispatcherBotModel.go:47: unable to fetch Ticketdetails
+2022/01/13 17:01:38 StartPoint.go:29: ===========================Dispatcher BOT Started===============
+2022/01/13 17:01:38 dbconfig.go:50: DbConn in Else condition =======> &{0 0x11d922e0 0 {0 0} [] map[] 0 2 0x11d9a0c0 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x9c4dc0}
+2022/01/13 17:01:39 TicketDispatcherBotDao.go:16: dial tcp 172.17.0.1:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2022/01/13 17:01:39 TicketDispatcherBotModel.go:40: Unable to fetch bot user
+2022/01/13 17:01:40 TicketDispatcherBotDao.go:44: dial tcp 172.17.0.1:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2022/01/13 17:01:40 TicketDispatcherBotModel.go:47: unable to fetch Ticketdetails
+2022/01/13 17:01:58 StartPoint.go:29: ===========================Dispatcher BOT Started===============
+2022/01/13 17:01:58 dbconfig.go:50: DbConn in Else condition =======> &{0 0x11d922e0 0 {0 0} [] map[] 0 2 0x11d9a0c0 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x9c4dc0}
+2022/01/13 17:01:59 TicketDispatcherBotDao.go:16: dial tcp 172.17.0.1:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2022/01/13 17:01:59 TicketDispatcherBotModel.go:40: Unable to fetch bot user
+2022/01/13 17:02:00 TicketDispatcherBotDao.go:44: dial tcp 172.17.0.1:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2022/01/13 17:02:00 TicketDispatcherBotModel.go:47: unable to fetch Ticketdetails

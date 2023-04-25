@@ -1,0 +1,35 @@
+2022/08/02 19:01:48 logger.go:54: LogFile : /home/mantech/Documents/josim/go/StatusChangedSchedular/src/log/logFile_AutoCloseTicketScheduler.log
+2022/08/02 19:01:48 StartPoint.go:34: ===========================Scheduler Started===============
+2022/08/02 19:02:48 StartPoint.go:29: <================Closuretask is Started===============>
+2022/08/02 19:02:48 dbconfig.go:27: dbConn======>  <nil>
+2022/08/02 19:02:48 dbconfig.go:38: root:7980161455@tcp(127.0.0.1:3306)/iFIX
+2022/08/02 19:02:48 dbconfig.go:41: Connection Object=====> &{0 0xc000010028 0 {0 0} [] map[] 0 0 0xc00001e300 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x4e8960}
+2022/08/02 19:02:48 dbconfig.go:46: DB Connected!!!
+2022/08/02 19:02:48 dbconfig.go:50: DbConn in Else condition =======> &{0 0xc000010028 0 {0 0} [] map[] 0 0 0xc00001e300 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x4e8960}
+2022/08/02 19:02:48 MoveStartToNewStatusDao.go:6: In side GetClientID
+2022/08/02 19:02:49 MoveStartToNewStatusDao.go:34: In side GetRecordTypeID
+2022/08/02 19:02:49 MoveStartToNewStatusDao.go:35: In side GetRecordTypeID-----> 42231
+2022/08/02 19:02:49 MoveStartToNewStatusDao.go:46: GetRecordTypeID rows.next() Error <nil>
+2022/08/02 19:02:49 MoveStartToNewStatusDao.go:51: In side getStageID
+2022/08/02 19:02:49 MoveStartToNewStatusDao.go:52: In side getStageID-----> 42231
+2022/08/02 19:02:49 MoveStartToNewStatusDao.go:64: getStageID rows.next() Error <nil>
+2022/08/02 19:02:49 MoveStartToNewStatusModel.go:78: grout,user: 120 385
+2022/08/02 19:02:49 MoveStartToNewStatusDao.go:69: In side GetWokinglabel
+2022/08/02 19:02:49 MoveStartToNewStatusDao.go:70: In side GetWokinglabel-----> 42231
+2022/08/02 19:02:49 MoveStartToNewStatusDao.go:82: GetWokinglabel rows.next() Error <nil>
+2022/08/02 19:02:49 MoveStartToNewStatusModel.go:105: Record status request body --> &{2 15 231 6623 -1 0 42231 385 120 385 0 385}
+2022/08/02 19:02:57 MoveStartToNewStatusModel.go:121: Error is --333333333333333333333333333333333-------> false
+2022/08/02 19:02:57 StartPoint.go:31: <===================Closuretask is finished====================>
+2022/08/02 19:03:48 StartPoint.go:29: <================Closuretask is Started===============>
+2022/08/02 19:03:48 MoveStartToNewStatusDao.go:6: In side GetClientID
+2022/08/02 19:03:49 MoveStartToNewStatusDao.go:34: In side GetRecordTypeID
+2022/08/02 19:03:49 MoveStartToNewStatusDao.go:35: In side GetRecordTypeID-----> 42231
+2022/08/02 19:03:49 MoveStartToNewStatusDao.go:46: GetRecordTypeID rows.next() Error <nil>
+2022/08/02 19:03:49 MoveStartToNewStatusDao.go:51: In side getStageID
+2022/08/02 19:03:49 MoveStartToNewStatusDao.go:52: In side getStageID-----> 42231
+2022/08/02 19:03:49 MoveStartToNewStatusDao.go:64: getStageID rows.next() Error <nil>
+2022/08/02 19:03:49 MoveStartToNewStatusModel.go:78: grout,user: 120 385
+2022/08/02 19:03:49 MoveStartToNewStatusDao.go:69: In side GetWokinglabel
+2022/08/02 19:03:49 MoveStartToNewStatusDao.go:70: In side GetWokinglabel-----> 42231
+2022/08/02 19:03:49 MoveStartToNewStatusDao.go:82: GetWokinglabel rows.next() Error <nil>
+2022/08/02 19:03:49 MoveStartToNewStatusModel.go:105: Record status request body --> &{2 15 231 6623 -1 0 42231 385 120 385 0 385}

@@ -1,0 +1,62 @@
+2022/11/11 06:54:28 logger.go:54: LogFile : /home/ubuntu/AutoClosureTicketSchedular/src/log/logFile_AutoCloseTicketScheduler.log
+2022/11/11 06:54:28 StartPoint.go:34: ===========================Scheduler Started===============
+2022/11/11 06:56:28 StartPoint.go:29: <================Closuretask is Started===============>
+2022/11/11 06:56:28 AutoclosureModel.go:33: In side Autoclosure model function
+2022/11/11 06:56:28 dbconfig.go:27: dbConn======>  <nil>
+2022/11/11 06:56:28 dbconfig.go:38: ifix:Staging@4321@tcp(172.17.0.1:3306)/iFIX
+2022/11/11 06:56:28 dbconfig.go:41: Connection Object=====> &{0 0xc0001cc018 0 {0 0} [] map[] 0 0 0xc0001f6000 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x502260}
+2022/11/11 06:56:28 dbconfig.go:46: DB Connected!!!
+2022/11/11 06:56:28 dbconfig.go:50: DbConn in Else condition =======> &{0 0xc0001cc018 0 {0 0} [] map[] 0 0 0xc0001f6000 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x502260}
+2022/11/11 06:56:28 AutoclosureDao.go:27: In side GetResolvedRecordsInfo model function
+2022/11/11 06:56:28 AutoclosureDao.go:30: SELECT clientid,id as mstorgnid,autoclose,coalesce(autoclosefromdt,'') autoclosefromdt,coalesce(autoclosetodt,'') autoclosetodt FROM mstorgnhierarchy where autoclose=1 and  deleteflg=0
+2022/11/11 06:56:28 AutoclosureDao.go:51: In side GetResolvedRecordsInfo model function
+2022/11/11 06:56:28 AutoclosureDao.go:65: select a.clientid,a.mstorgnhirarchyid,a.recordid,a.recordstageid,b.closuredate,d.recorddifftypeid,d.recorddiffid,
+c.usergroupid,c.userid,e.mststateid from maprecordtorecorddifferentiation a , mstrecordautoclosure b, trnrecord c,
+maprecordtorecorddifferentiation d,maprecordstatetodifferentiation e,maprecordtorecorddifferentiation f where  a.recorddiffid in
+ (select id from mstrecorddifferentiation where recorddifftypeid=3 and seqno=3 and deleteflg=0 and activeflg=1 ) and b.islatest=1 and
+ a.islatest=1 and d.isworking=1 and d.islatest=1 and d.recordid=a.recordid and a.recorddifftypeid=3 and a.recordid=b.recordid and 
+b.closureflag='N' AND defective='N' AND  a.recordid= c.id and a.recorddiffid=e.recorddiffid and a.clientid=? and a.mstorgnhirarchyid=? and 
+ b.closuredt between ? and ?  and b.closuredt<=ADDTIME(now(), '5:30:0.0') and a.recordid=f.recordid and f.recorddifftypeid=2 and
+ f.islatest=1 and f.recorddiffid in (select id from mstrecorddifferentiation where recorddifftypeid=2 and seqno in (1,2) and deleteflg=0 and
+ activeflg=1 )  limit 200; 2 9 2022-10-31 15:01:23 2022-10-31 15:20:56
+2022/11/11 06:56:28 AutoclosureModel.go:54: Total Tickets **************************** 2
+2022/11/11 06:56:28 AutoclosureModel.go:55: 
+
+
+2022/11/11 06:56:28 AutoclosureModel.go:61: Total Tickets  ---------> 2
+2022/11/11 06:56:28 AutoclosureModel.go:62: ===================================================Ticket ID is ===========================> 118548
+2022/11/11 06:56:28 AutoclosureDao.go:87: In side GetNxtStateID model function
+2022/11/11 06:56:28 AutoclosureModel.go:68: nxtstateID is----> 74
+2022/11/11 06:56:28 AutoclosureDao.go:108: In side GetCurrentStatusSeq model function
+2022/11/11 06:56:28 AutoclosureDao.go:148: parameters --> 2 9 118548 123421 448 5
+2022/11/11 06:56:28 AutoclosureDao.go:197: Gettermnamebyid rows.next() Error <nil>
+2022/11/11 06:56:28 AutoclosureDao.go:167: parameters --> 2 9 118548 123421 449 5
+2022/11/11 06:56:28 AutoclosureDao.go:197: Gettermnamebyid rows.next() Error <nil>
+2022/11/11 06:56:28 AutoclosureModel.go:119: Record status request body --> &{2 9 131 3625 75 74 118548 84 84 5}
+2022/11/11 06:56:29 AutoclosureModel.go:126: NO Response From MoveWorkflowURL
+2022/11/11 06:56:29 AutoclosureModel.go:61: Total Tickets  ---------> 2
+2022/11/11 06:56:29 AutoclosureModel.go:62: ===================================================Ticket ID is ===========================> 118550
+2022/11/11 06:56:29 AutoclosureDao.go:87: In side GetNxtStateID model function
+2022/11/11 06:56:29 AutoclosureModel.go:68: nxtstateID is----> 74
+2022/11/11 06:56:29 AutoclosureDao.go:108: In side GetCurrentStatusSeq model function
+2022/11/11 06:56:29 AutoclosureDao.go:148: parameters --> 2 9 118550 123423 448 5
+2022/11/11 06:56:29 AutoclosureDao.go:197: Gettermnamebyid rows.next() Error <nil>
+2022/11/11 06:56:29 AutoclosureDao.go:167: parameters --> 2 9 118550 123423 449 5
+2022/11/11 06:56:29 AutoclosureDao.go:197: Gettermnamebyid rows.next() Error <nil>
+2022/11/11 06:56:29 AutoclosureModel.go:119: Record status request body --> &{2 9 131 3737 75 74 118550 84 84 5}
+2022/11/11 06:56:30 AutoclosureModel.go:126: NO Response From MoveWorkflowURL
+2022/11/11 06:56:30 AutoclosureDao.go:51: In side GetResolvedRecordsInfo model function
+2022/11/11 06:56:30 AutoclosureDao.go:65: select a.clientid,a.mstorgnhirarchyid,a.recordid,a.recordstageid,b.closuredate,d.recorddifftypeid,d.recorddiffid,
+c.usergroupid,c.userid,e.mststateid from maprecordtorecorddifferentiation a , mstrecordautoclosure b, trnrecord c,
+maprecordtorecorddifferentiation d,maprecordstatetodifferentiation e,maprecordtorecorddifferentiation f where  a.recorddiffid in
+ (select id from mstrecorddifferentiation where recorddifftypeid=3 and seqno=3 and deleteflg=0 and activeflg=1 ) and b.islatest=1 and
+ a.islatest=1 and d.isworking=1 and d.islatest=1 and d.recordid=a.recordid and a.recorddifftypeid=3 and a.recordid=b.recordid and 
+b.closureflag='N' AND defective='N' AND  a.recordid= c.id and a.recorddiffid=e.recorddiffid and a.clientid=? and a.mstorgnhirarchyid=? and 
+ b.closuredt between ? and ?  and b.closuredt<=ADDTIME(now(), '5:30:0.0') and a.recordid=f.recordid and f.recorddifftypeid=2 and
+ f.islatest=1 and f.recorddiffid in (select id from mstrecorddifferentiation where recorddifftypeid=2 and seqno in (1,2) and deleteflg=0 and
+ activeflg=1 )  limit 200; 2 21 2022-10-23 22:42:27 2022-10-23 22:51:58
+2022/11/11 06:56:30 AutoclosureModel.go:54: Total Tickets **************************** 0
+2022/11/11 06:56:30 AutoclosureModel.go:55: 
+
+
+2022/11/11 06:56:30 StartPoint.go:31: <===================Closuretask is finished====================>

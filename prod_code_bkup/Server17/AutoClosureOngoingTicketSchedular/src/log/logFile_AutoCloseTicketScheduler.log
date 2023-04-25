@@ -1,0 +1,26 @@
+2022/09/05 20:41:28 logger.go:54: LogFile : /home/mantech/Documents/josim/go/AutoClosureOngoingTicketSchedular/src/log/logFile_AutoCloseTicketScheduler.log
+2022/09/05 20:41:28 StartPoint.go:34: ===========================Scheduler Started===============
+2022/09/05 20:42:28 StartPoint.go:29: <================Closuretask is Started===============>
+2022/09/05 20:42:28 AutoclosureModel.go:33: In side Autoclosure model function
+2022/09/05 20:42:28 dbconfig.go:27: dbConn======>  <nil>
+2022/09/05 20:42:28 dbconfig.go:38: root:7980161455@tcp(127.0.0.1:3306)/iFIX
+2022/09/05 20:42:28 dbconfig.go:41: Connection Object=====> &{0 0xc00018c018 0 {0 0} [] map[] 0 0 0xc0001ba000 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x502860}
+2022/09/05 20:42:28 dbconfig.go:46: DB Connected!!!
+2022/09/05 20:42:28 dbconfig.go:50: DbConn in Else condition =======> &{0 0xc00018c018 0 {0 0} [] map[] 0 0 0xc0001ba000 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x502860}
+2022/09/05 20:42:28 AutoclosureDao.go:53: In side GetResolvedRecordsInfo model function
+2022/09/05 20:42:28 AutoclosureDao.go:59: 
+2022/09/05 20:42:28 AutoclosureModel.go:54: Total Tickets **************************** 1
+2022/09/05 20:42:28 AutoclosureModel.go:55: 
+
+
+2022/09/05 20:42:28 AutoclosureModel.go:61: Total Tickets  ---------> 1
+2022/09/05 20:42:28 AutoclosureModel.go:62: ===================================================Ticket ID is ===========================> 60
+2022/09/05 20:42:28 AutoclosureDao.go:81: In side GetNxtStateID model function
+2022/09/05 20:42:28 AutoclosureModel.go:68: nxtstateID is----> 6
+2022/09/05 20:42:28 AutoclosureDao.go:102: In side GetCurrentStatusSeq model function
+2022/09/05 20:42:28 AutoclosureDao.go:142: parameters --> 2 2 60 54 18 16
+2022/09/05 20:42:28 AutoclosureDao.go:191: Gettermnamebyid rows.next() Error <nil>
+2022/09/05 20:42:28 AutoclosureDao.go:161: parameters --> 2 2 60 54 19 16
+2022/09/05 20:42:28 AutoclosureDao.go:191: Gettermnamebyid rows.next() Error <nil>
+2022/09/05 20:42:28 AutoclosureModel.go:119: Record status request body --> &{2 2 34 917 5 6 60 12 12 16}
+2022/09/05 20:42:28 AutoclosureModel.go:123: Error is ---------> Post "http://localhost:8082/api/moveWorkflow": dial tcp 127.0.0.1:8082: connect: connection refused

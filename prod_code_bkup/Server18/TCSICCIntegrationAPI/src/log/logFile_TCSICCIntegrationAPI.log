@@ -1,0 +1,31 @@
+2021/07/16 01:09:52 TCSICCIntegrationAPIController.go:111: TCSICCMonITCreateTicket
+2021/07/16 01:09:52 TCSICCIntegrationAPIController.go:127: invalid character '}' looking for beginning of object key string
+2021/07/16 01:10:29 TCSICCIntegrationAPIController.go:111: TCSICCMonITCreateTicket
+2021/07/16 01:10:29 TCSICCIntegrationAPIController.go:127: invalid character 'I' after top-level value
+2021/07/16 01:12:12 TCSICCIntegrationAPIController.go:111: TCSICCMonITCreateTicket
+2021/07/16 01:12:12 TCSICCIntegrationAPIController.go:134: Payload====> map[authkey:a945682a5362eeb6f4f7b5b71642754b caller_id:MonIT_TCSICC_User category1:Datacenter Services - Alert category2:Database category3:MS SQL client_code:tcs_icc device_type:database event_id:tcsicc1234 host:198.121.122.89 location:NA long_description:test org_code:INDIA-ICC short_description:test for Availability issue for mysqldatabase trigger_id:100200300]
+2021/07/16 01:12:12 TCSICCMonITIntegrationApiService.go:207: MonITIntegrationApiServiceMethod
+2021/07/16 01:12:12 TCSICCMonITIntegrationApiService.go:292: MonITIntegrationApiServiceMethod1
+2021/07/16 01:12:12 TCSICCMonITIntegrationApiService.go:304: MonITIntegrationApiServiceMethod2
+2021/07/16 01:13:25 logger.go:38: LogFile : D:/Api's/TCSICCIntegrationAPI/src/log/logFile_TCSICCIntegrationAPI.log
+2021/07/16 01:13:25 StartPoint.go:16: Main Started
+2021/07/16 01:13:31 TCSICCIntegrationAPIController.go:111: TCSICCMonITCreateTicket
+2021/07/16 01:13:31 TCSICCIntegrationAPIController.go:134: Payload====> map[authkey:a945682a5362eeb6f4f7b5b71642754b caller_id:MonIT_TCSICC_User category1:Datacenter Services - Alert category2:Database category3:MS SQL client_code:tcs_icc device_type:database event_id:tcsicc1234 host:198.121.122.89 location:NA long_description:test org_code:INDIA-ICC short_description:test for Availability issue for mysqldatabase trigger_id:100200300]
+2021/07/16 01:13:31 TCSICCMonITIntegrationApiService.go:207: MonITIntegrationApiServiceMethod
+2021/07/16 01:13:31 TCSICCMonITIntegrationApiService.go:292: MonITIntegrationApiServiceMethod1
+2021/07/16 01:13:31 TCSICCMonITIntegrationApiService.go:304: MonITIntegrationApiServiceMethod2
+2021/07/16 01:13:31 TCSICCMonITIntegrationApiService.go:511: {"clientid":2,"mstorgnhirarchyid":2,"requesterinfo":"","recordtypeseq":0,"recordtypeid":0,"recordname":"test for Availability issue for mysqldatabase","recordesc":"test","recordpriorityid":"","recordattachpath":"","recordcategorydtls":"","recordpsdetails":"","recordsourcetype":"","recordcreatedid":0,"recordoriginalid":0,"recordrequestinfo":"","recordsets":[{"id":1,"type":[{"id":32,"val":496},{"id":33,"val":849},{"id":34,"val":876},{"id":35,"val":877},{"id":36,"val":878}],"val":0},{"id":2,"type":null,"val":4},{"id":5,"type":null,"val":471},{"id":3,"type":null,"val":8}],"recordfields":null,"responsedifftypeid":null,"createduserid":19,"createdusergroupid":12,"userid":0,"originaluserid":19,"originalusergroupid":12,"assetIds":null,"workingcatlabelid":34,"additionalfields":[{"id":19,"termsid":39,"val":"tcsicc1234"},{"id":20,"termsid":40,"val":"198.121.122.89"},{"id":21,"termsid":41,"val":"NA"},{"id":22,"termsid":42,"val":"database"},{"id":23,"termsid":43,"val":"database"}],"requestername":"MonIT TCS ICC User","requesteremail":"kaustubh@ifixtechglobal.com","requestermobile":"9988776655","requesterlocation":"NA","source":"Alert"}
+2021/07/16 01:13:32 TCSICCMonITIntegrationApiService.go:534: map[id:1205 message:record data inserted successfully. response:IN00001153 success:true]
+2021/07/16 01:13:32 TCSICCIntegrationAPIController.go:146: success=true
+2021/07/16 01:19:36 TCSICCIntegrationAPIController.go:111: TCSICCMonITCreateTicket
+2021/07/16 01:19:36 TCSICCIntegrationAPIController.go:134: Payload====> map[authkey:a945682a5362eeb6f4f7b5b71642754b caller_id:MonIT_TCSICC_User category1:Datacenter Services - Alert category2:Database category3:MS SQL client_code:tcs_icc device_type:database event_id:tcsicc1234 host:198.121.122.89 location:NA long_description:test org_code:INDIA-ICC short_description:test for Availability issue for mysqldatabase trigger_id:100200300]
+2021/07/16 01:19:36 TCSICCMonITIntegrationApiService.go:207: MonITIntegrationApiServiceMethod
+2021/07/16 01:19:36 TCSICCMonITIntegrationApiService.go:292: MonITIntegrationApiServiceMethod1
+2021/07/16 01:19:36 TCSICCMonITIntegrationApiService.go:304: MonITIntegrationApiServiceMethod2
+2021/07/16 01:19:36 TCSICCMonITIntegrationApiService.go:511: {"clientid":2,"mstorgnhirarchyid":2,"requesterinfo":"","recordtypeseq":0,"recordtypeid":0,"recordname":"test for Availability issue for mysqldatabase","recordesc":"test","recordpriorityid":"","recordattachpath":"","recordcategorydtls":"","recordpsdetails":"","recordsourcetype":"","recordcreatedid":0,"recordoriginalid":0,"recordrequestinfo":"","recordsets":[{"id":1,"type":[{"id":32,"val":496},{"id":33,"val":849},{"id":34,"val":876},{"id":35,"val":877},{"id":36,"val":878}],"val":0},{"id":2,"type":null,"val":4},{"id":5,"type":null,"val":471},{"id":3,"type":null,"val":8}],"recordfields":null,"responsedifftypeid":null,"createduserid":19,"createdusergroupid":12,"userid":0,"originaluserid":19,"originalusergroupid":12,"assetIds":null,"workingcatlabelid":34,"additionalfields":[{"id":19,"termsid":39,"val":"tcsicc1234"},{"id":20,"termsid":40,"val":"198.121.122.89"},{"id":21,"termsid":41,"val":"NA"},{"id":22,"termsid":42,"val":"database"},{"id":23,"termsid":43,"val":"database"}],"requestername":"MonIT TCS ICC User","requesteremail":"kaustubh@ifixtechglobal.com","requestermobile":"9988776655","requesterlocation":"NA","source":"Alert"}
+2021/07/16 01:19:37 TCSICCMonITIntegrationApiService.go:534: map[id:1206 message:record data inserted successfully. response:IN00001154 success:true]
+2021/07/16 01:19:37 TCSICCIntegrationAPIController.go:146: success=true
+2022/02/24 18:14:43 logger.go:38: LogFile : D:/Api's/API/Integration API/TCSICCIntegrationAPI/src/log/logFile_TCSICCIntegrationAPI.log
+2022/02/24 18:14:43 StartPoint.go:16: Main Started
+2022/03/08 12:21:34 logger.go:38: LogFile : D:/Api's/API/Integration API/TCSICCIntegrationAPI/src/log/logFile_TCSICCIntegrationAPI.log
+2022/03/08 12:21:34 StartPoint.go:16: Main Started

@@ -1,0 +1,34 @@
+2022/02/28 11:22:56 logger.go:54: LogFile : /home/ubuntu/Puja/Angular/API/BulkUserUpload/src/log/logFile_UserUpload.log
+2022/02/28 11:22:56 StartPoint.go:16: Main Started
+2022/02/28 11:23:05 BulkUserUploadHandlers.go:67: BulkUserUpload====>
+2022/02/28 11:23:05 BulkUserUploadHandlers.go:70: BulkUserUpload====>1
+2022/02/28 11:23:05 BulkUserUploadHandlers.go:83: BulkUserUpload====>2
+2022/02/28 11:23:05 BulkUserUploadHandlers.go:92: Payload====> {2 2 [130 127]}
+2022/02/28 11:23:05 BulkUserUploadHandlers.go:97: Payload1====> {2 2 [130 127]}
+2022/02/28 11:23:05 BulkUserDownloadModel.go:27: BulkUserDownload M1
+2022/02/28 11:23:05 BulkUserDownloadModel.go:29: BulkUserDownload M1
+2022/02/28 11:23:05 BulkUserUploadDao.go:31: GetHeaderName Method
+2022/02/28 11:23:05 BulkUserDownloadModel.go:71: Rowcount ====> 0
+2022/02/28 11:23:05 BulkUserDownloadModel.go:71: Rowcount ====> 1
+2022/02/28 11:23:05 BulkUserDownloadModel.go:79: First names Ramiz
+2022/02/28 11:23:05 BulkUserDownloadModel.go:71: Rowcount ====> 2
+2022/02/28 11:23:05 BulkUserDownloadModel.go:79: First names Amarendra
+2022/02/28 11:23:05 BulkUserDownloadModel.go:134: 2 2 http://localhost:8082/api/fileupload /home/ubuntu/Puja/Angular/API/BulkUserUpload/src/resource/downloads/ICCM_USER.xlsx
+2022/02/28 11:23:05 fileUploadApiCall.go:20: FileUploadAPICall
+2022/02/28 11:23:33 BulkUserUploadHandlers.go:67: BulkUserUpload====>
+2022/02/28 11:23:33 BulkUserUploadHandlers.go:70: BulkUserUpload====>1
+2022/02/28 11:23:33 BulkUserUploadHandlers.go:83: BulkUserUpload====>2
+2022/02/28 11:23:33 BulkUserUploadHandlers.go:92: Payload====> {2 2 [130 127]}
+2022/02/28 11:23:33 BulkUserUploadHandlers.go:97: Payload1====> {2 2 [130 127]}
+2022/02/28 11:23:33 BulkUserDownloadModel.go:27: BulkUserDownload M1
+2022/02/28 11:23:33 BulkUserDownloadModel.go:29: BulkUserDownload M1
+2022/02/28 11:23:33 BulkUserUploadDao.go:31: GetHeaderName Method
+2022/02/28 11:23:33 BulkUserDownloadModel.go:71: Rowcount ====> 0
+2022/02/28 11:23:33 BulkUserDownloadModel.go:71: Rowcount ====> 1
+2022/02/28 11:23:33 BulkUserDownloadModel.go:79: First names Ramiz
+2022/02/28 11:23:33 BulkUserDownloadModel.go:71: Rowcount ====> 2
+2022/02/28 11:23:33 BulkUserDownloadModel.go:79: First names Amarendra
+2022/02/28 11:23:33 BulkUserDownloadModel.go:134: 2 2 http://localhost:8082/api/fileupload /home/ubuntu/Puja/Angular/API/BulkUserUpload/src/resource/downloads/ICCM_USER.xlsx
+2022/02/28 11:23:33 fileUploadApiCall.go:20: FileUploadAPICall
+2022/02/28 11:23:34 fileUploadApiCall.go:75: respbody===> {"success":true,"message":"","details":{"id":3,"clientid":2,"mstorgnhirarchyid":2,"credentialtype":"1","credentialaccount":"","credentialpassword":"","credentialkey":"","activeflg":1,"originalfile":"ICCM_USER.xlsx","filename":"20220228-e6887f73-d2ec-43f7-a3cf-ab0de1d967c1.xlsx","path":"https://tcsiccifix4storage.blob.core.windows.net/tcsiccifix4uat/20220228-e6887f73-d2ec-43f7-a3cf-ab0de1d967c1.xlsx"}}
+2022/02/28 11:23:34 fileUploadApiCall.go:81: fileuploadResponse========> {true  {3 2 2 1    1 ICCM_USER.xlsx 20220228-e6887f73-d2ec-43f7-a3cf-ab0de1d967c1.xlsx https://tcsiccifix4storage.blob.core.windows.net/tcsiccifix4uat/20220228-e6887f73-d2ec-43f7-a3cf-ab0de1d967c1.xlsx}}

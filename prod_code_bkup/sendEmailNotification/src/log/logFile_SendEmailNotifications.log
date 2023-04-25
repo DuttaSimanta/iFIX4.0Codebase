@@ -1,0 +1,5 @@
+2022/01/21 17:36:41 logger.go:54: LogFile : D:/Api's/API/sendEmailNotification/src/log/logFile_SendEmailNotifications.log
+2022/01/21 17:36:41 StartPoint.go:10: Main Started
+2022/01/21 17:36:41 StartPoint.go:22: smsPass====> eWyuk7V\yw5JL@UT
+2022/01/21 17:36:43 SendSMS.go:86: Payload====> map[customerId:iFIX_SMS destinationAddress:[8013225433 8961329244 9875642426] dltTemplateId:1107163282950818969 entityId:1201158065364369018 incorrectNum:[] message:Dear User,The Incident IN00001245 is created Regards,TCS ICCM messageRequestId:ef143fd1-b063-40ec-93a1-d976d9de9ac3 messageType:SERVICE_IMPLICIT metaData:map[createdBy:<nil> mdrCategory:NOTP rbacSubAccount:map[accountId:5f8ab04e-d46b-46f7-adee-a6be151e33a8 services:map[SMS:map[creditFlag:true serviceStatus:ACTIVE]] status:ACTIVE] subAccountId:5f8ab04e-d46b-46f7-adee-a6be151e33a8] sourceAddress:TCSICC]
+2022/01/21 17:36:43 SendSMS.go:94: SMS Sent Successfully

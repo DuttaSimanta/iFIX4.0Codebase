@@ -1,0 +1,152 @@
+2022/01/24 16:02:11 logger.go:54: LogFile : /home/mantech/Documents/josim/go/Transporttabledata/src/log/logFile_Transport.log
+2022/01/24 16:02:11 StartPoint.go:16: Main Started
+2022/01/24 16:03:54 TransportTablesdataModel.go:97: In side UploadTablesdata Model......Import Started
+2022/01/24 16:03:54 TransportTablesdataModel.go:112: /home/mantech/Documents/josim/go/Transporttabledata/src/resource/downloads/ICCM_ABNAMRO_2022.01.24 15:52:38.json
+2022/01/24 16:03:54 dbconfig.go:27: dbConn======>  <nil>
+2022/01/24 16:03:54 dbconfig.go:38: root:7980161455@tcp(127.0.0.1:3306)/iFIX
+2022/01/24 16:03:54 dbconfig.go:41: Connection Object=====> &{0 0xc00012c128 0 {0 0} [] map[] 0 0 0xc000102540 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x4d79e0}
+2022/01/24 16:03:54 dbconfig.go:46: DB Connected!!!
+2022/01/24 16:03:54 dbconfig.go:50: DbConn in Else condition =======> &{0 0xc00012c128 0 {0 0} [] map[] 0 0 0xc000102540 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x4d79e0}
+2022/01/24 16:03:54 TransportTablesdataModel.go:128: 1
+2022/01/24 16:03:54 TransportTablesdataModel.go:141: hii
+2022/01/24 16:03:54 TransportTablesdataDao.go:34: In side GetSchema
+2022/01/24 16:03:54 TransportTablesdataDao.go:37: select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_Name='uidgen' order by ORDINAL_POSITION
+2022/01/24 16:03:54 TransportTablesdataModel.go:147: [id clientid mstorgnhirarchyid difftypeid code uid activeflg deleteflg ifixsysid lastupdatedby lastupdateddate]
+2022/01/24 16:03:54 TransportTablesdataDao.go:167: In side DeleteMapCategoryWithKeyword
+2022/01/24 16:03:54 TransportTablesdataModel.go:166: [4 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:03:54 TransportTablesdataDao.go:108: In side CheckDuplicateData
+2022/01/24 16:03:54 TransportTablesdataDao.go:112: query->>>> select count(id)  from uidgen where  id=?
+2022/01/24 16:03:54 TransportTablesdataDao.go:126: In side InsertTabledata
+2022/01/24 16:03:54 TransportTablesdataDao.go:130: Query --> INSERT INTO uidgen(id,clientid,mstorgnhirarchyid,difftypeid,code,uid,activeflg,deleteflg,ifixsysid,lastupdatedby,lastupdateddate) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+2022/01/24 16:03:54 TransportTablesdataDao.go:137: Parameter --> [4 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:03:54 TransportTablesdataModel.go:192: ICCM_ABNAMRO_2022.01.24 15:52:38.json File is imported
+2022/01/24 16:03:54 TransportTablesdataModel.go:193: Import Ended
+2022/01/24 16:06:02 TransportTablesdataModel.go:97: In side UploadTablesdata Model......Import Started
+2022/01/24 16:06:02 TransportTablesdataModel.go:112: /home/mantech/Documents/josim/go/Transporttabledata/src/resource/downloads/ICCM_ABNAMRO_2022.01.24 15:52:38.json
+2022/01/24 16:06:02 dbconfig.go:50: DbConn in Else condition =======> &{0 0xc00012c128 0 {0 0} [0xc0001ae480 0xc000064000] map[] 0 2 0xc000102540 false map[0xc000064000:map[0xc000064000:true] 0xc0001ae480:map[0xc0001ae480:true]] map[] 0 0 0 0 <nil> 0 0 0 0 0x4d79e0}
+2022/01/24 16:06:02 TransportTablesdataModel.go:128: 1
+2022/01/24 16:06:02 TransportTablesdataModel.go:141: hii
+2022/01/24 16:06:02 TransportTablesdataDao.go:34: In side GetSchema
+2022/01/24 16:06:02 TransportTablesdataDao.go:37: select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_Name='uidgen' order by ORDINAL_POSITION
+2022/01/24 16:06:02 TransportTablesdataModel.go:147: [id clientid mstorgnhirarchyid difftypeid code uid activeflg deleteflg ifixsysid lastupdatedby lastupdateddate]
+2022/01/24 16:06:02 TransportTablesdataDao.go:167: In side DeleteMapCategoryWithKeyword
+2022/01/24 16:06:02 TransportTablesdataModel.go:166: [4 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:06:02 TransportTablesdataDao.go:108: In side CheckDuplicateData
+2022/01/24 16:06:02 TransportTablesdataDao.go:112: query->>>> select count(id)  from uidgen where  id=?
+2022/01/24 16:06:02 TransportTablesdataDao.go:126: In side InsertTabledata
+2022/01/24 16:06:02 TransportTablesdataDao.go:130: Query --> INSERT INTO uidgen(id,clientid,mstorgnhirarchyid,difftypeid,code,uid,activeflg,deleteflg,ifixsysid,lastupdatedby,lastupdateddate) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+2022/01/24 16:06:02 TransportTablesdataDao.go:137: Parameter --> [4 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:06:02 TransportTablesdataModel.go:166: [10 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:06:02 TransportTablesdataDao.go:108: In side CheckDuplicateData
+2022/01/24 16:06:02 TransportTablesdataDao.go:112: query->>>> select count(id)  from uidgen where  id=?
+2022/01/24 16:06:02 TransportTablesdataDao.go:126: In side InsertTabledata
+2022/01/24 16:06:02 TransportTablesdataDao.go:130: Query --> INSERT INTO uidgen(id,clientid,mstorgnhirarchyid,difftypeid,code,uid,activeflg,deleteflg,ifixsysid,lastupdatedby,lastupdateddate) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+2022/01/24 16:06:02 TransportTablesdataDao.go:137: Parameter --> [10 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:06:02 TransportTablesdataModel.go:192: ICCM_ABNAMRO_2022.01.24 15:52:38.json File is imported
+2022/01/24 16:06:02 TransportTablesdataModel.go:193: Import Ended
+2022/01/24 16:07:21 TransportTablesdataModel.go:97: In side UploadTablesdata Model......Import Started
+2022/01/24 16:07:21 TransportTablesdataModel.go:112: /home/mantech/Documents/josim/go/Transporttabledata/src/resource/downloads/ICCM_ABNAMRO_2022.01.24 15:52:38.json
+2022/01/24 16:07:21 dbconfig.go:50: DbConn in Else condition =======> &{0 0xc00012c128 0 {0 0} [0xc000064000 0xc0001ae480] map[] 0 2 0xc000102540 false map[0xc000064000:map[0xc000064000:true] 0xc0001ae480:map[0xc0001ae480:true]] map[] 0 0 0 0 <nil> 0 0 0 0 0x4d79e0}
+2022/01/24 16:07:21 TransportTablesdataModel.go:128: 1
+2022/01/24 16:07:21 TransportTablesdataModel.go:141: hii
+2022/01/24 16:07:21 TransportTablesdataDao.go:34: In side GetSchema
+2022/01/24 16:07:21 TransportTablesdataDao.go:37: select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_Name='uidgen' order by ORDINAL_POSITION
+2022/01/24 16:07:21 TransportTablesdataModel.go:147: [id clientid mstorgnhirarchyid difftypeid code uid activeflg deleteflg ifixsysid lastupdatedby lastupdateddate]
+2022/01/24 16:07:21 TransportTablesdataDao.go:167: In side DeleteMapCategoryWithKeyword
+2022/01/24 16:07:21 TransportTablesdataModel.go:166: [4 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:07:21 TransportTablesdataDao.go:108: In side CheckDuplicateData
+2022/01/24 16:07:21 TransportTablesdataDao.go:112: query->>>> select count(id)  from uidgen where  id=?
+2022/01/24 16:07:21 TransportTablesdataDao.go:126: In side InsertTabledata
+2022/01/24 16:07:21 TransportTablesdataDao.go:130: Query --> INSERT INTO uidgen(id,clientid,mstorgnhirarchyid,difftypeid,code,uid,activeflg,deleteflg,ifixsysid,lastupdatedby,lastupdateddate) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+2022/01/24 16:07:21 TransportTablesdataDao.go:137: Parameter --> [4 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:07:21 TransportTablesdataModel.go:166: [10 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:07:21 TransportTablesdataDao.go:108: In side CheckDuplicateData
+2022/01/24 16:07:21 TransportTablesdataDao.go:112: query->>>> select count(id)  from uidgen where  id=?
+2022/01/24 16:07:21 TransportTablesdataDao.go:126: In side InsertTabledata
+2022/01/24 16:07:21 TransportTablesdataDao.go:130: Query --> INSERT INTO uidgen(id,clientid,mstorgnhirarchyid,difftypeid,code,uid,activeflg,deleteflg,ifixsysid,lastupdatedby,lastupdateddate) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+2022/01/24 16:07:21 TransportTablesdataDao.go:137: Parameter --> [10 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:07:21 TransportTablesdataModel.go:192: ICCM_ABNAMRO_2022.01.24 15:52:38.json File is imported
+2022/01/24 16:07:21 TransportTablesdataModel.go:193: Import Ended
+2022/01/24 16:12:31 TransportTablesdataModel.go:97: In side UploadTablesdata Model......Import Started
+2022/01/24 16:12:31 TransportTablesdataModel.go:112: /home/mantech/Documents/josim/go/Transporttabledata/src/resource/downloads/ICCM_ABNAMRO_2022.01.24 15:52:38.json
+2022/01/24 16:12:31 dbconfig.go:50: DbConn in Else condition =======> &{0 0xc00012c128 0 {0 0} [0xc0001ae480 0xc000064000] map[] 0 2 0xc000102540 false map[0xc000064000:map[0xc000064000:true] 0xc0001ae480:map[0xc0001ae480:true]] map[] 0 0 0 0 <nil> 0 0 0 0 0x4d79e0}
+2022/01/24 16:12:31 TransportTablesdataModel.go:128: 1
+2022/01/24 16:12:31 TransportTablesdataModel.go:141: hii
+2022/01/24 16:12:31 TransportTablesdataDao.go:34: In side GetSchema
+2022/01/24 16:12:31 TransportTablesdataDao.go:37: select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_Name='uidgen' order by ORDINAL_POSITION
+2022/01/24 16:12:31 TransportTablesdataModel.go:147: [id clientid mstorgnhirarchyid difftypeid code uid activeflg deleteflg ifixsysid lastupdatedby lastupdateddate]
+2022/01/24 16:12:31 TransportTablesdataDao.go:167: In side DeleteMapCategoryWithKeyword
+2022/01/24 16:12:31 TransportTablesdataModel.go:166: [4 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:12:31 TransportTablesdataDao.go:108: In side CheckDuplicateData
+2022/01/24 16:12:31 TransportTablesdataDao.go:112: query->>>> select count(id)  from uidgen where  id=?
+2022/01/24 16:12:31 TransportTablesdataDao.go:126: In side InsertTabledata
+2022/01/24 16:12:31 TransportTablesdataDao.go:130: Query --> INSERT INTO uidgen(id,clientid,mstorgnhirarchyid,difftypeid,code,uid,activeflg,deleteflg,ifixsysid,lastupdatedby,lastupdateddate) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+2022/01/24 16:12:31 TransportTablesdataDao.go:137: Parameter --> [4 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:12:31 TransportTablesdataModel.go:166: [10 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:12:31 TransportTablesdataDao.go:108: In side CheckDuplicateData
+2022/01/24 16:12:31 TransportTablesdataDao.go:112: query->>>> select count(id)  from uidgen where  id=?
+2022/01/24 16:12:31 TransportTablesdataDao.go:126: In side InsertTabledata
+2022/01/24 16:12:31 TransportTablesdataDao.go:130: Query --> INSERT INTO uidgen(id,clientid,mstorgnhirarchyid,difftypeid,code,uid,activeflg,deleteflg,ifixsysid,lastupdatedby,lastupdateddate) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+2022/01/24 16:12:31 TransportTablesdataDao.go:137: Parameter --> [10 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:12:31 TransportTablesdataModel.go:192: ICCM_ABNAMRO_2022.01.24 15:52:38.json File is imported
+2022/01/24 16:12:31 TransportTablesdataModel.go:193: Import Ended
+2022/01/24 16:12:57 TransportTablesdataModel.go:97: In side UploadTablesdata Model......Import Started
+2022/01/24 16:12:57 TransportTablesdataModel.go:112: /home/mantech/Documents/josim/go/Transporttabledata/src/resource/downloads/ICCM_ABNAMRO_2022.01.24 15:52:38.json
+2022/01/24 16:12:57 dbconfig.go:50: DbConn in Else condition =======> &{0 0xc00012c128 0 {0 0} [0xc000064000 0xc0001ae480] map[] 0 2 0xc000102540 false map[0xc000064000:map[0xc000064000:true] 0xc0001ae480:map[0xc0001ae480:true]] map[] 0 0 0 0 <nil> 0 0 0 0 0x4d79e0}
+2022/01/24 16:12:57 TransportTablesdataModel.go:128: 1
+2022/01/24 16:12:57 TransportTablesdataModel.go:141: hii
+2022/01/24 16:12:57 TransportTablesdataDao.go:34: In side GetSchema
+2022/01/24 16:12:57 TransportTablesdataDao.go:37: select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_Name='uidgen' order by ORDINAL_POSITION
+2022/01/24 16:12:57 TransportTablesdataModel.go:147: [id clientid mstorgnhirarchyid difftypeid code uid activeflg deleteflg ifixsysid lastupdatedby lastupdateddate]
+2022/01/24 16:12:57 TransportTablesdataDao.go:167: In side DeleteMapCategoryWithKeyword
+2022/01/24 16:12:58 TransportTablesdataModel.go:166: [4 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:12:58 TransportTablesdataDao.go:108: In side CheckDuplicateData
+2022/01/24 16:12:58 TransportTablesdataDao.go:112: query->>>> select count(id)  from uidgen where  id=?
+2022/01/24 16:12:58 TransportTablesdataDao.go:126: In side InsertTabledata
+2022/01/24 16:12:58 TransportTablesdataDao.go:130: Query --> INSERT INTO uidgen(id,clientid,mstorgnhirarchyid,difftypeid,code,uid,activeflg,deleteflg,ifixsysid,lastupdatedby,lastupdateddate) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+2022/01/24 16:12:58 TransportTablesdataDao.go:137: Parameter --> [4 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:12:58 TransportTablesdataModel.go:166: [10 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:12:58 TransportTablesdataDao.go:108: In side CheckDuplicateData
+2022/01/24 16:12:58 TransportTablesdataDao.go:112: query->>>> select count(id)  from uidgen where  id=?
+2022/01/24 16:12:58 TransportTablesdataDao.go:126: In side InsertTabledata
+2022/01/24 16:12:58 TransportTablesdataDao.go:130: Query --> INSERT INTO uidgen(id,clientid,mstorgnhirarchyid,difftypeid,code,uid,activeflg,deleteflg,ifixsysid,lastupdatedby,lastupdateddate) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+2022/01/24 16:12:58 TransportTablesdataDao.go:137: Parameter --> [10 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:12:58 TransportTablesdataModel.go:192: ICCM_ABNAMRO_2022.01.24 15:52:38.json File is imported
+2022/01/24 16:12:58 TransportTablesdataModel.go:193: Import Ended
+2022/01/24 16:25:45 TransportTablesdataModel.go:97: In side UploadTablesdata Model......Import Started
+2022/01/24 16:25:45 TransportTablesdataModel.go:112: /home/mantech/Documents/josim/go/Transporttabledata/src/resource/downloads/ICCM_ABNAMRO_2022.01.24 15:52:38.json
+2022/01/24 16:25:45 dbconfig.go:50: DbConn in Else condition =======> &{0 0xc00012c128 0 {0 0} [0xc0001ae480 0xc000064000] map[] 0 2 0xc000102540 false map[0xc000064000:map[0xc000064000:true] 0xc0001ae480:map[0xc0001ae480:true]] map[] 0 0 0 0 <nil> 0 0 0 0 0x4d79e0}
+2022/01/24 16:25:45 TransportTablesdataModel.go:128: 1
+2022/01/24 16:25:45 TransportTablesdataModel.go:141: hii
+2022/01/24 16:25:45 TransportTablesdataDao.go:34: In side GetSchema
+2022/01/24 16:25:45 TransportTablesdataDao.go:37: select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_Name='uidgen' order by ORDINAL_POSITION
+2022/01/24 16:25:45 TransportTablesdataModel.go:147: [id clientid mstorgnhirarchyid difftypeid code uid activeflg deleteflg ifixsysid lastupdatedby lastupdateddate]
+2022/01/24 16:25:45 TransportTablesdataDao.go:167: In side DeleteMapCategoryWithKeyword
+2022/01/24 16:25:45 TransportTablesdataModel.go:166: [4 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:25:45 TransportTablesdataDao.go:108: In side CheckDuplicateData
+2022/01/24 16:25:45 TransportTablesdataDao.go:112: query->>>> select count(id)  from uidgen where  id=?
+2022/01/24 16:25:45 TransportTablesdataDao.go:126: In side InsertTabledata
+2022/01/24 16:25:45 TransportTablesdataDao.go:130: Query --> INSERT INTO uidgen(id,clientid,mstorgnhirarchyid,difftypeid,code,uid,activeflg,deleteflg,ifixsysid,lastupdatedby,lastupdateddate) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+2022/01/24 16:25:45 TransportTablesdataDao.go:137: Parameter --> [4 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:25:45 TransportTablesdataModel.go:166: [10 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:25:45 TransportTablesdataDao.go:108: In side CheckDuplicateData
+2022/01/24 16:25:45 TransportTablesdataDao.go:112: query->>>> select count(id)  from uidgen where  id=?
+2022/01/24 16:25:45 TransportTablesdataDao.go:126: In side InsertTabledata
+2022/01/24 16:25:45 TransportTablesdataDao.go:130: Query --> INSERT INTO uidgen(id,clientid,mstorgnhirarchyid,difftypeid,code,uid,activeflg,deleteflg,ifixsysid,lastupdatedby,lastupdateddate) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+2022/01/24 16:25:45 TransportTablesdataDao.go:137: Parameter --> [10 2 6 6 stay 5 1 0 8c569ba3-d5ca-40a3-9ada-ba1bea82e7e4 <nil> 2022-01-16 17:02:15]
+2022/01/24 16:25:45 TransportTablesdataModel.go:192: ICCM_ABNAMRO_2022.01.24 15:52:38.json File is imported
+2022/01/24 16:25:45 TransportTablesdataModel.go:193: Import Ended
+2022/01/24 16:26:10 TransportTablesdataModel.go:20: In side DownloadTablesdata Model......Export started
+2022/01/24 16:26:10 TransportTablesdataModel.go:23: contextpath->/home/mantech/Documents/josim/go/Transporttabledata/src
+2022/01/24 16:26:10 dbconfig.go:50: DbConn in Else condition =======> &{0 0xc00012c128 0 {0 0} [0xc000064000 0xc0001ae480] map[] 0 2 0xc000102540 false map[0xc000064000:map[0xc000064000:true] 0xc0001ae480:map[0xc0001ae480:true]] map[] 0 0 0 0 <nil> 0 0 0 0 0x4d79e0}
+2022/01/24 16:26:10 TransportTablesdataDao.go:13: In side GetClientOrg
+2022/01/24 16:26:10 TransportTablesdataDao.go:34: In side GetSchema
+2022/01/24 16:26:10 TransportTablesdataDao.go:37: select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_Name='uidgen' order by ORDINAL_POSITION
+2022/01/24 16:26:10 TransportTablesdataModel.go:53: [id clientid mstorgnhirarchyid difftypeid code uid activeflg deleteflg ifixsysid lastupdatedby lastupdateddate]
+2022/01/24 16:26:10 TransportTablesdataDao.go:54: In side GetTableData
+2022/01/24 16:26:10 TransportTablesdataDao.go:79: Query>>>>>>> select id,clientid,mstorgnhirarchyid,difftypeid,code,uid,activeflg,deleteflg,ifixsysid,lastupdatedby,lastupdateddate from uidgen where clientid=? and mstorgnhirarchyid=?
+2022/01/24 16:26:10 fileUploadApiCall.go:20: FileUploadAPICall
+2022/01/24 16:26:10 fileUploadApiCall.go:75: respbody===> {"success":true,"message":"","details":{"id":5,"clientid":1,"mstorgnhirarchyid":1,"credentialtype":"1","credentialaccount":"","credentialpassword":"","credentialkey":"","activeflg":1,"originalfile":"ICCM_ABNAMRO_2022.01.24 16:26:10.json","filename":"20220124-9757a67b-fa72-4e98-8257-b5b64eadd392.json","path":"https://tcsiccifix4storage.blob.core.windows.net/tcsiccifix4uat/20220124-9757a67b-fa72-4e98-8257-b5b64eadd392.json"}}
+2022/01/24 16:26:10 fileUploadApiCall.go:81: fileuploadResponse========> {true  {5 1 1 1    1 ICCM_ABNAMRO_2022.01.24 16:26:10.json 20220124-9757a67b-fa72-4e98-8257-b5b64eadd392.json https://tcsiccifix4storage.blob.core.windows.net/tcsiccifix4uat/20220124-9757a67b-fa72-4e98-8257-b5b64eadd392.json}}
+2022/01/24 16:26:10 TransportTablesdataModel.go:89: File Name: ICCM_ABNAMRO_2022.01.24 16:26:10.json is uploaded in blob
+2022/01/24 16:26:10 TransportTablesdataModel.go:90: Export End

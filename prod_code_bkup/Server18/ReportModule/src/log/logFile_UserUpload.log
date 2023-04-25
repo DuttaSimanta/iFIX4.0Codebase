@@ -1,0 +1,114 @@
+2022/04/29 16:11:03 logger.go:54: LogFile : /home/mantech/Documents/josim/go/ReportModule/src/log/logFile_UserUpload.log
+2022/04/29 16:11:03 StartPoint.go:16: Main Started
+2022/04/29 16:11:03 StartPoint.go:24: /home/mantech/Documents/josim/go/ReportModule/src
+2022/04/29 16:11:11 DownloadReportModel.go:36: Create Ticket Json=======>    {"where":[{"field":"clientid","op":"=","val":"2"},{"field":"mstorgnhirarchyid","op":"in","val":"2,25"}],"cat":[{"seq":null,"val":"Routers"}],"headers":["clientid","mstorgnhirarchyid","id","recordid","tickettypeid","levelonecatename","ticketid","shortdescription","orgcreatorname","requestorname","source","vendorname","vendorticketid","resolutioncode","resolutioncomment","createddatetime","status","assigneduser","assignedgroup","priority","respsladuedatetime","calendaraging","reopencount","prioritycount","followupcount","outboundcount"],"headersdisplay":["Customer","Ticket ID","Short Description","Original Created By Name","Requester Name","Source","Vendor Name","Vendor Ticket Id","Resolution Code","Resolution Comment","Created Date","Status","Assigned User (Last assigned user from the Resolver Group)","Assigned Group (Last assigned Resolver Group)","Priority","Due Date","Aging in Days (Calendar days from created date)","Reopen Count","Priority Count","User Follow Up","Outbound Count","a","b","c","d","e","f","g"],"userid":6}
+2022/04/29 16:11:11 DbConfig.go:97: root:7980161455@tcp(localhost:3306)/iFIX
+2022/04/29 16:11:11 QueryresultDao.go:14: In side RecordGridResultOnly
+2022/04/29 16:11:11 QueryresultDao.go:144: cate: map[seq:<nil> val:Routers]
+2022/04/29 16:11:11 DownloadReportModel.go:40: Post "http://localhost:8098/reports/getqueryresult": EOF
+2022/04/29 16:11:34 DownloadReportModel.go:36: Create Ticket Json=======>    {"where":[{"field":"clientid","op":"=","val":"2"},{"field":"mstorgnhirarchyid","op":"in","val":"2,25"}],"cat":[{"seq":"5","val":"Routers"}],"headers":["clientid","mstorgnhirarchyid","id","recordid","tickettypeid","levelonecatename","ticketid","shortdescription","orgcreatorname","requestorname","source","vendorname","vendorticketid","resolutioncode","resolutioncomment","createddatetime","status","assigneduser","assignedgroup","priority","respsladuedatetime","calendaraging","reopencount","prioritycount","followupcount","outboundcount"],"headersdisplay":["Customer","Ticket ID","Short Description","Original Created By Name","Requester Name","Source","Vendor Name","Vendor Ticket Id","Resolution Code","Resolution Comment","Created Date","Status","Assigned User (Last assigned user from the Resolver Group)","Assigned Group (Last assigned Resolver Group)","Priority","Due Date","Aging in Days (Calendar days from created date)","Reopen Count","Priority Count","User Follow Up","Outbound Count","a","b","c","d","e","f","g"],"userid":6}
+2022/04/29 16:11:34 QueryresultDao.go:14: In side RecordGridResultOnly
+2022/04/29 16:11:34 QueryresultDao.go:144: cate: map[seq:5 val:Routers]
+2022/04/29 16:11:34 QueryresultDao.go:58: Query:===> SELECT  recordfulldetails.clientid  ,  recordfulldetails.mstorgnhirarchyid  ,  recordfulldetails.id  ,  recordfulldetails.recordid  ,  recordfulldetails.tickettypeid  ,  recordfulldetails.levelonecatename  ,  recordfulldetails.ticketid  ,  recordfulldetails.shortdescription  ,  recordfulldetails.orgcreatorname  ,  recordfulldetails.requestorname  ,  recordfulldetails.source  ,  recordfulldetails.vendorname  ,  recordfulldetails.vendorticketid  ,  recordfulldetails.resolutioncode  ,  recordfulldetails.resolutioncomment  ,  recordfulldetails.createddatetime  ,  recordfulldetails.status  ,  recordfulldetails.assigneduser  ,  recordfulldetails.assignedgroup  ,  recordfulldetails.priority  ,  recordfulldetails.respsladuedatetime  ,  recordfulldetails.calendaraging  ,  recordfulldetails.reopencount  ,  recordfulldetails.prioritycount  ,  recordfulldetails.followupcount  ,  recordfulldetails.outboundcount  FROM recordfulldetails  WHERE recordfulldetails.activeflg=1 AND recordfulldetails.deleteflg=0   AND recordfulldetails.clientid = ?  AND recordfulldetails.mstorgnhirarchyid IN  ('2','25')  AND recordfulldetails.recordid IN (SELECT
+			DISTINCT f.recordid
+		FROM
+			recordfulldetails f,
+			mstrecordtype a,
+			mstrecorddifferentiationtype b,
+			maprecordtorecorddifferentiation c,
+			mstrecorddifferentiation d
+		WHERE
+			a.torecorddifftypeid = b.id
+				AND a.clientid = f.clientid
+				AND a.mstorgnhirarchyid = f.mstorgnhirarchyid
+				AND a.deleteflg = 0
+				AND a.activeflg = 1
+				AND a.fromrecorddifftypeid = 2
+				AND a.fromrecorddiffid = f.tickettypeid
+				AND b.parentid = 1
+				AND c.recordid = f.recordid
+				AND c.islatest = 1
+				AND a.torecorddifftypeid = c.recorddifftypeid
+				AND c.recorddiffid = d.id
+				AND d.parentcategorynames LIKE '%Routers%' AND d.seqno=? )
+2022/04/29 16:11:35 QueryresultDao.go:245: In side RecordGridCountOnly
+2022/04/29 16:11:35 QueryresultDao.go:144: cate: map[seq:5 val:Routers]
+2022/04/29 16:11:35 DownloadReportModel.go:59: No Data Is There
+2022/04/29 16:11:42 DownloadReportModel.go:36: Create Ticket Json=======>    {"where":[{"field":"clientid","op":"=","val":"2"},{"field":"mstorgnhirarchyid","op":"in","val":"2,25"}],"cat":[{"seq":"5","val":"Router"}],"headers":["clientid","mstorgnhirarchyid","id","recordid","tickettypeid","levelonecatename","ticketid","shortdescription","orgcreatorname","requestorname","source","vendorname","vendorticketid","resolutioncode","resolutioncomment","createddatetime","status","assigneduser","assignedgroup","priority","respsladuedatetime","calendaraging","reopencount","prioritycount","followupcount","outboundcount"],"headersdisplay":["Customer","Ticket ID","Short Description","Original Created By Name","Requester Name","Source","Vendor Name","Vendor Ticket Id","Resolution Code","Resolution Comment","Created Date","Status","Assigned User (Last assigned user from the Resolver Group)","Assigned Group (Last assigned Resolver Group)","Priority","Due Date","Aging in Days (Calendar days from created date)","Reopen Count","Priority Count","User Follow Up","Outbound Count","a","b","c","d","e","f","g"],"userid":6}
+2022/04/29 16:11:42 QueryresultDao.go:14: In side RecordGridResultOnly
+2022/04/29 16:11:42 QueryresultDao.go:144: cate: map[seq:5 val:Router]
+2022/04/29 16:11:42 QueryresultDao.go:58: Query:===> SELECT  recordfulldetails.clientid  ,  recordfulldetails.mstorgnhirarchyid  ,  recordfulldetails.id  ,  recordfulldetails.recordid  ,  recordfulldetails.tickettypeid  ,  recordfulldetails.levelonecatename  ,  recordfulldetails.ticketid  ,  recordfulldetails.shortdescription  ,  recordfulldetails.orgcreatorname  ,  recordfulldetails.requestorname  ,  recordfulldetails.source  ,  recordfulldetails.vendorname  ,  recordfulldetails.vendorticketid  ,  recordfulldetails.resolutioncode  ,  recordfulldetails.resolutioncomment  ,  recordfulldetails.createddatetime  ,  recordfulldetails.status  ,  recordfulldetails.assigneduser  ,  recordfulldetails.assignedgroup  ,  recordfulldetails.priority  ,  recordfulldetails.respsladuedatetime  ,  recordfulldetails.calendaraging  ,  recordfulldetails.reopencount  ,  recordfulldetails.prioritycount  ,  recordfulldetails.followupcount  ,  recordfulldetails.outboundcount  FROM recordfulldetails  WHERE recordfulldetails.activeflg=1 AND recordfulldetails.deleteflg=0   AND recordfulldetails.clientid = ?  AND recordfulldetails.mstorgnhirarchyid IN  ('2','25')  AND recordfulldetails.recordid IN (SELECT
+			DISTINCT f.recordid
+		FROM
+			recordfulldetails f,
+			mstrecordtype a,
+			mstrecorddifferentiationtype b,
+			maprecordtorecorddifferentiation c,
+			mstrecorddifferentiation d
+		WHERE
+			a.torecorddifftypeid = b.id
+				AND a.clientid = f.clientid
+				AND a.mstorgnhirarchyid = f.mstorgnhirarchyid
+				AND a.deleteflg = 0
+				AND a.activeflg = 1
+				AND a.fromrecorddifftypeid = 2
+				AND a.fromrecorddiffid = f.tickettypeid
+				AND b.parentid = 1
+				AND c.recordid = f.recordid
+				AND c.islatest = 1
+				AND a.torecorddifftypeid = c.recorddifftypeid
+				AND c.recorddiffid = d.id
+				AND d.parentcategorynames LIKE '%Router%' AND d.seqno=? )
+2022/04/29 16:11:43 QueryresultDao.go:245: In side RecordGridCountOnly
+2022/04/29 16:11:43 QueryresultDao.go:144: cate: map[seq:5 val:Router]
+2022/04/29 16:11:43 QueryresultDao.go:404: TIME 2 2 2022-04-29 16:11:43
+2022/04/29 16:11:43 QueryresultDao.go:428: addtime: 19800
+2022/04/29 16:11:43 DownloadReportModel.go:75: SEE ITT: 2 2 2022-04-30 03:11:43 <nil>
+2022/04/29 16:11:43 Jsontoexcelconverter.go:19: contextpath->/home/mantech/Documents/josim/go/ReportModule/src
+2022/04/29 16:11:43 Jsontoexcelconverter.go:26: FILEPATH: /home/mantech/Documents/josim/go/ReportModule/src/resource/downloads/iFIXReport_2022-04-30 03:11:43.xlsx
+2022/04/29 16:11:43 Jsontoexcelconverter.go:28: 26
+2022/04/29 16:11:43 Jsontoexcelconverter.go:33: [clientid mstorgnhirarchyid id recordid tickettypeid levelonecatename ticketid shortdescription orgcreatorname requestorname source vendorname vendorticketid resolutioncode resolutioncomment createddatetime status assigneduser assignedgroup priority respsladuedatetime calendaraging reopencount prioritycount followupcount outboundcount]
+2022/04/29 16:11:43 fileUploadApiCall.go:20: FileUploadAPICall
+2022/04/29 16:11:43 fileUploadApiCall.go:81: respbody===> {"success":true,"message":"","details":{"id":5,"clientid":1,"mstorgnhirarchyid":1,"credentialtype":"1","credentialaccount":"","credentialpassword":"","credentialkey":"","activeflg":1,"originalfile":"iFIXReport_2022-04-30 03:11:43.xlsx","filename":"20220429-aacfb626-cf64-460b-bcdb-944545d41fa5.xlsx","path":"https://tcsiccifix4storage.blob.core.windows.net/tcsiccifix4uat/20220429-aacfb626-cf64-460b-bcdb-944545d41fa5.xlsx"}}
+2022/04/29 16:11:43 fileUploadApiCall.go:86: FileUploadAPICall
+2022/04/29 16:11:43 fileUploadApiCall.go:89: fileuploadResponse========> {true  {5 1 1 1    1 iFIXReport_2022-04-30 03:11:43.xlsx 20220429-aacfb626-cf64-460b-bcdb-944545d41fa5.xlsx https://tcsiccifix4storage.blob.core.windows.net/tcsiccifix4uat/20220429-aacfb626-cf64-460b-bcdb-944545d41fa5.xlsx}}
+2022/04/29 16:11:43 DownloadReportModel.go:94: Create Ticket Json=======>    {"refuserid":6,"originalfilename":"iFIXReport_2022-04-30 03:11:43.xlsx","uploadedfilename":"20220429-aacfb626-cf64-460b-bcdb-944545d41fa5.xlsx"}
+2022/04/29 16:11:43 DownloadReportModel.go:95: http://localhost:8082/api/addrepoertdownloadlist application/json {"refuserid":6,"originalfilename":"iFIXReport_2022-04-30 03:11:43.xlsx","uploadedfilename":"20220429-aacfb626-cf64-460b-bcdb-944545d41fa5.xlsx"}
+2022/04/29 16:13:39 DownloadReportModel.go:36: Create Ticket Json=======>    {"where":[{"field":"clientid","op":"=","val":"2"},{"field":"mstorgnhirarchyid","op":"in","val":"2,25"}],"cat":[{"seq":"5","val":"work"},{"seq":"5","val":"Router"}],"headers":["clientid","mstorgnhirarchyid","id","recordid","tickettypeid","levelonecatename","ticketid","shortdescription","orgcreatorname","requestorname","source","vendorname","vendorticketid","resolutioncode","resolutioncomment","createddatetime","status","assigneduser","assignedgroup","priority","respsladuedatetime","calendaraging","reopencount","prioritycount","followupcount","outboundcount"],"headersdisplay":["Customer","Ticket ID","Short Description","Original Created By Name","Requester Name","Source","Vendor Name","Vendor Ticket Id","Resolution Code","Resolution Comment","Created Date","Status","Assigned User (Last assigned user from the Resolver Group)","Assigned Group (Last assigned Resolver Group)","Priority","Due Date","Aging in Days (Calendar days from created date)","Reopen Count","Priority Count","User Follow Up","Outbound Count","a","b","c","d","e","f","g"],"userid":6}
+2022/04/29 16:13:39 QueryresultDao.go:14: In side RecordGridResultOnly
+2022/04/29 16:13:39 QueryresultDao.go:58: Query:===> SELECT  recordfulldetails.clientid  ,  recordfulldetails.mstorgnhirarchyid  ,  recordfulldetails.id  ,  recordfulldetails.recordid  ,  recordfulldetails.tickettypeid  ,  recordfulldetails.levelonecatename  ,  recordfulldetails.ticketid  ,  recordfulldetails.shortdescription  ,  recordfulldetails.orgcreatorname  ,  recordfulldetails.requestorname  ,  recordfulldetails.source  ,  recordfulldetails.vendorname  ,  recordfulldetails.vendorticketid  ,  recordfulldetails.resolutioncode  ,  recordfulldetails.resolutioncomment  ,  recordfulldetails.createddatetime  ,  recordfulldetails.status  ,  recordfulldetails.assigneduser  ,  recordfulldetails.assignedgroup  ,  recordfulldetails.priority  ,  recordfulldetails.respsladuedatetime  ,  recordfulldetails.calendaraging  ,  recordfulldetails.reopencount  ,  recordfulldetails.prioritycount  ,  recordfulldetails.followupcount  ,  recordfulldetails.outboundcount  FROM recordfulldetails  WHERE recordfulldetails.activeflg=1 AND recordfulldetails.deleteflg=0   AND recordfulldetails.clientid = ?  AND recordfulldetails.mstorgnhirarchyid IN  ('2','25')  AND recordfulldetails.recordid IN (SELECT
+			DISTINCT f.recordid
+		FROM
+			recordfulldetails f,
+			mstrecordtype a,
+			mstrecorddifferentiationtype b,
+			maprecordtorecorddifferentiation c,
+			mstrecorddifferentiation d
+		WHERE
+			a.torecorddifftypeid = b.id
+				AND a.clientid = f.clientid
+				AND a.mstorgnhirarchyid = f.mstorgnhirarchyid
+				AND a.deleteflg = 0
+				AND a.activeflg = 1
+				AND a.fromrecorddifftypeid = 2
+				AND a.fromrecorddiffid = f.tickettypeid
+				AND b.parentid = 1
+				AND c.recordid = f.recordid
+				AND c.islatest = 1
+				AND a.torecorddifftypeid = c.recorddifftypeid
+				AND c.recorddiffid = d.id
+				AND d.parentcategorynames LIKE '%work%Router%')
+2022/04/29 16:13:40 QueryresultDao.go:245: In side RecordGridCountOnly
+2022/04/29 16:13:40 QueryresultDao.go:404: TIME 2 2 2022-04-29 16:13:40
+2022/04/29 16:13:40 QueryresultDao.go:428: addtime: 19800
+2022/04/29 16:13:40 DownloadReportModel.go:75: SEE ITT: 2 2 2022-04-30 03:13:40 <nil>
+2022/04/29 16:13:40 Jsontoexcelconverter.go:19: contextpath->/home/mantech/Documents/josim/go/ReportModule/src
+2022/04/29 16:13:40 Jsontoexcelconverter.go:26: FILEPATH: /home/mantech/Documents/josim/go/ReportModule/src/resource/downloads/iFIXReport_2022-04-30 03:13:40.xlsx
+2022/04/29 16:13:40 Jsontoexcelconverter.go:28: 26
+2022/04/29 16:13:40 Jsontoexcelconverter.go:33: [clientid mstorgnhirarchyid id recordid tickettypeid levelonecatename ticketid shortdescription orgcreatorname requestorname source vendorname vendorticketid resolutioncode resolutioncomment createddatetime status assigneduser assignedgroup priority respsladuedatetime calendaraging reopencount prioritycount followupcount outboundcount]
+2022/04/29 16:13:40 fileUploadApiCall.go:20: FileUploadAPICall
+2022/04/29 16:13:40 fileUploadApiCall.go:81: respbody===> {"success":true,"message":"","details":{"id":5,"clientid":1,"mstorgnhirarchyid":1,"credentialtype":"1","credentialaccount":"","credentialpassword":"","credentialkey":"","activeflg":1,"originalfile":"iFIXReport_2022-04-30 03:13:40.xlsx","filename":"20220429-1a1f324f-8369-4554-9c1b-56223349275e.xlsx","path":"https://tcsiccifix4storage.blob.core.windows.net/tcsiccifix4uat/20220429-1a1f324f-8369-4554-9c1b-56223349275e.xlsx"}}
+2022/04/29 16:13:40 fileUploadApiCall.go:86: FileUploadAPICall
+2022/04/29 16:13:40 fileUploadApiCall.go:89: fileuploadResponse========> {true  {5 1 1 1    1 iFIXReport_2022-04-30 03:13:40.xlsx 20220429-1a1f324f-8369-4554-9c1b-56223349275e.xlsx https://tcsiccifix4storage.blob.core.windows.net/tcsiccifix4uat/20220429-1a1f324f-8369-4554-9c1b-56223349275e.xlsx}}
+2022/04/29 16:13:40 DownloadReportModel.go:94: Create Ticket Json=======>    {"refuserid":6,"originalfilename":"iFIXReport_2022-04-30 03:13:40.xlsx","uploadedfilename":"20220429-1a1f324f-8369-4554-9c1b-56223349275e.xlsx"}
+2022/04/29 16:13:40 DownloadReportModel.go:95: http://localhost:8082/api/addrepoertdownloadlist application/json {"refuserid":6,"originalfilename":"iFIXReport_2022-04-30 03:13:40.xlsx","uploadedfilename":"20220429-1a1f324f-8369-4554-9c1b-56223349275e.xlsx"}

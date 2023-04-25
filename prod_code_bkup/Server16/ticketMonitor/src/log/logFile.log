@@ -1,0 +1,48 @@
+2022/07/01 14:57:07 logger.go:54: LogFile : /home/mantech/Documents/josim/go/ticketmonitor/src/log/logFile.log
+2022/07/01 14:57:07 StartPoint.go:16: ===========================Scheduler Started===============
+2022/07/01 14:58:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 14:58:07 dbconfig.go:97: root:7980161455@tcp(127.0.0.1:3306)/iFIX
+2022/07/01 14:58:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 14:58:08 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 14:59:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 14:59:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 14:59:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:00:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:00:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:00:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:01:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:01:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:01:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:02:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:02:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:02:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:03:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:03:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:03:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:04:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:04:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:04:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:05:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:05:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:05:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:06:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:06:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:06:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:07:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:07:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:07:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:08:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:08:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:08:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:09:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:09:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:09:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:10:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:10:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:10:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:11:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:11:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:11:09 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>
+2022/07/01 15:12:07 StartPoint.go:11: <================AutoUserRecordCodeDelete is Started===============>
+2022/07/01 15:12:07 AutoclosureDao.go:11: Query --> DELETE FROM mstuserrecord where (opendate+1800)<=UNIX_TIMESTAMP();
+2022/07/01 15:12:07 StartPoint.go:13: <===================AutoUserRecordCodeDelete is finished====================>

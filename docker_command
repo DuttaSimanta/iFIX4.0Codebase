@@ -1,0 +1,985 @@
+sudo docker container run -dit --name ifixmaster --publish 8082:8082 ifix-master:latest
+
+CREATE USER 'ifix'@'%' IDENTIFIED BY 'Staging@4321';
+GRANT ALL PRIVILEGES ON * . * TO 'ifix'@'%';
+
+sudo ssh ubuntu@20.204.74.38
+
+------- UAT
+sudo ssh ubuntu@52.172.249.233
+
+TCSUAT@54321
+10.5.2.6/10.5.2.7
+
+10.5.2.20
+cd /usr/local/go/src/ifixSLAstagetableupdateSchedular/ifix/dao/
+
+
+curl --request GET http://localhost:8080/ifixDMApplication/faqIndexCTSFromS3
+
+For NATS SERVER : 10.5.2.26
+
+------- Test Staging
+
+sudo ssh ubuntu@20.204.29.18
+Private IP : 10.7.0.4
+Username – ubuntu
+Password - #iFIX@654321
+
+
+------ SingletonDB
+sudo ssh ubuntu@20.204.29.18
+Private IP : 10.7.0.6
+Username – ubuntu
+Password - #iFIX@654321
+
+
+
+------ Production
+sudo ssh iFIXProdTCSICC@20.204.51.21
+Private IP : 10.5.3.4
+Username – iFIXProdTCSICC
+Password - #TCSICCiFIXProd@65243
+
+
+sudo docker container prune
+sudo docker image prune
+
+
+TCS-ICC-iFIX-4.0-Prod-GO-1
+
+10.5.3.8
+
+TCS-ICC-iFIX-4.0-Prod-GO-2
+
+
+10.5.3.9
+
+mysql -u gouser -p#TCSICCiFIXProd@65243
+
+
+cd /etc/mysql/mysql.conf.d/
+-------------------------------
+sudo scp ./iFIX.zip  ubuntu@52.172.198.186:/home/ubuntu/IFIX/
+
+
+-----------------------------------------------------------------------------
+
+https://www.youtube.com/watch?v=KLOdisHW8rQ
+
+https://golangbyexample.com/go-mod-sum-module/
+
+1. go mod init iFIX
+2. sudo docker build -t ifix-master .
+3. sudo docker container run -dit --name ifixmaster --net=host --publish 8082:8082 ifix-master:latest
+
+stop container:sudo ssh ubuntu@52.172.249.233
+---------------
+sudo docker container stop ifixmaster
+sudo docker container rm ifixmaster
+#iFIX@654321
+show image:
+--------------
+sudo docker images
+
+sudo docker container ls -s
+
+delete image:
+--------------
+sudo docker image rm -f ifix-master
+
+sudo docker exec -it ifixmaster /bin/bash
+
+sudo docker exec -it ifixtcsiccintegrationapi /bin/bash
+
+
+================================================
+sudo scp -pr ubuntu@20.204.74.38:/home/ubuntu/uat_files/ifixRecord.zip .
+
+sudo scp -pr ubuntu@20.204.74.38:/home/ubuntu/uat_files/RecordstatusupdateStaskModel.go .
+
+sudo scp -pr ubuntu@20.204.74.38:/home/ubuntu/uat_files/ifixDMApplication.war .
+
+SLF4J: Found binding in [jar:file:/home/ubuntu/apache-tomcat-9.0.67/webapps/ifixDMApplication/WEB-INF/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+
+service.account/iccm/Welcome#0987654321
+tcsiccadmin/iccm / 12345
+
+https://iccmuat.ifixcloud.io/
+https://itsmicc.ifixcloud.io/
+
+round(UNIX_TIMESTAMP(?)
+FROM_UNIXTIME(a.dateofholiday)
+
+
+Copy log file From Container
+==============================
+
+sudo docker cp ifixrecord:app/log/logfile-2022-08-30T13-26-44.454.log /home/ubuntu/
+
+netstat -tulpn | grep LISTEN
+
+
+Record
+
+2. sudo docker build -t ifix-record .  (docker build -t ifix-record . | tee /home/ubuntu/ifix-record.build.log)
+3. sudo docker container run -dit --name ifixrecord --net=host --publish 8083:8083 ifix-record:latest
+
+stop container:
+---------------
+sudo docker container stop ifixrecord
+sudo docker container rm ifixrecord
+
+delete image:
+--------------
+sudo docker image rm -f ifix-record
+
+sudo docker exec -it ifixrecord /bin/sh
+
+sudo docker history 41ca20d88d12
+
+sudo docker container prune -f
+sudo docker image prune -a -f
+
+
+----------------------
+
+1. go mod init ifixSchedular
+2. sudo docker build -t ifix-schsudo ssh ubuntu@52.172.198.186edular .
+3. sudo docker container run -dit --name ifixschedular ifix-schedular:latest
+4. sudo docker exec -it ifixschedular /bin/bash
+5. nohup go run main.go &
+
+nohup go run slamain.go &
+
+nohup go run main.go &
+
+
+sudo docker container stop ifixschedular
+sudo docker container rm ifixschedular
+sudo docker image rm -f ifix-schedular
+
+ps -aux | grep go
+
+sudo netstat -tulpn | grep :8080
+
+
+
+sudo docker container stop ifixmaster && sudo docker container rm ifixmaster && sudo docker image rm -f ifix-master && sudo docker build -t ifix-master . && sudo docker container run -dit --name ifixmaster --net=host --publish 8082:8082 ifix-master:latest
+
+http://165.232.132.238:31000/api/login
+{"loginname":"tcsiccadmin","code":"iccm","password":"12345"}
+curl  http://165.232.132.238:31000/api/login -d '{"loginname":"tcsiccadmin","code":"iccm","password":"12345"}'
+
+
+sudo docker container stop ifixrecord && sudo docker container rm ifixrecord && sudo docker image rm -f ifix-record && sudo docker build -t ifix-record . && sudo docker container run --restart unless-stopped -dit --log-opt max-size=2m --log-opt max-file=3 --name ifixrecord --net=host --publish 8083:8083 ifix-record:latest 
+
+
+sudo docker container stop ifixrecord && sudo docker container rm ifixrecord && sudo docker image rm -f ifix-record && sudo docker build -t ifix-record . && sudo docker container run --restart unless-stopped -dit --log-opt max-size=50m --log-opt max-file=1 --name ifixrecord -v /home/iFIXProdTCSICC/recordlogs:/app/log#TCSICCiFIXProd@65243 --privileged=true --net=host --publish 8083:8083 ifix-record:latest
+
+sudo docker container stop ifixreport && sudo docker container rm ifixreport && sudo docker image rm -f ifix-report && cd /godrive/ReportModule/src && sudo docker build -t ifix-report . && sudo docker container run --restart unless-stopped -dit --log-opt max-size=50m --log-opt max-file=1 --name ifixreport --net=host --publish 8098:8098 ifix-report:latest && cd ~
+
+
+sudo docker container stop ifixrecordnogenschedular && sudo docker container rm ifixrecordnogenschedular && sudo docker image rm -f ifix-recordnogenschedular && cd /godrive/RecordNoGenScheduler/src && sudo docker build -t ifix-recordnogenschedular . && sudo docker container run --restart unless-stopped -dit --name ifixrecordnogenschedular ifix-recordnogenschedular:latest
+
+ 
+--restart=on-failure
+
+
+sudo docker container stop ifixdispatcherbot && sudo docker container rm ifixdispatcherbot && sudo docker image rm -f ifix-dispatcherbot && cd ~/TicketDispatcherBot/src && sudo docker build -t ifix-dispatcherbot . && sudo docker container run -dit --name ifixdispatcherbot --net=host --publish 8095:8095 ifix-dispatcherbot:latest && cd ~
+
+
+docker rmi $(docker images --filter=reference="*:stuff_*" -q)
+ 
+docker rmi $(docker images ifix-master:v1 -q)
+
+
+sudo docker exec -it  ifixdispatcherbot /bin/bash
+
+sudo docker container logs ifixrecord
+
+sudo scp -pr ubuntu@20.204.74.38:/home/ubuntu/SLAStagingTableUpdate.go .
+
+
+sudo scp -pr ubuntu@20.204.74.38:/home/ubuntu//slautility.go .
+
+
+sudo scp -pr ubuntu@20.204.74.38:/home/ubuntu/uat_files/slautilitydao.go .
+
+
+
+sudo scp -pr ubuntu@20.204.74.38:/home/ubuntu/uat_files/DynamicqueryDao.go .
+
+
+sudo scp -pr ubuntu@20.204.74.38:/home/ubuntu/uat_files/RecordcommonDao.go .
+
+
+sudo scp -pr ubuntu@20.204.74.38:/home/ubuntu/uat_files/DynamicqueryModel.go .
+
+
+sudo scp -pr ubuntu@52.172.198.186:/home/ubuntu/uat_files/ifixDMApplication.war /home/ubuntu/apache-tomcat-8.5.65/webapps/
+
+sudo scp -pr ubuntu@52.172.198.186:/home/ubuntu/ifixRecord/ifix/models/RecordModel.go /home/ubuntu/ifixRecord/ifix/models/
+
+
+
+sudo scp -pr ubuntu@52.172.198.186:/home/ubuntu/iFIX/ExternalAPIHandler.go /home/ubuntu/ifixRecord/ifix/handlers/
+
+sudo scp -pr ubuntu@52.172.198.186:/home/ubuntu/iFIX/ExternalAPIEntity.go /home/ubuntu/ifixRecord/ifix/entities/
+
+sudo scp -pr ubuntu@52.172.198.186:/home/ubuntu/iFIX/ExternalAPIDao.go /home/ubuntu/ifixRecord/ifix/dao/
+
+sudo scp -pr ubuntu@52.172.198.186:/home/ubuntu/iFIX/ExternalAPIModel.go /home/ubuntu/ifixRecord/ifix/models/
+
+
+
+
+sudo scp -pr ubuntu@20.204.74.38:/home/ubuntu/uat_files/ifixSLAstagetableupdateSchedular.zip .
+
+================================================
+
+netstat -tulpn | grep LISTEN
+
+ps -ef | grep tomcat
+
+http://52.172.198.186:8080/ifixDMApplication/faqIndexCTSFromS3
+
+curl --request GET http://localhost:8080/ifixDMApplication/faqIndexCTSFromS3
+
+curl --request GET 'http://localhost:8080/ifixDMApplication/faqSearchKeywordCTSforDocs?clientId=2&searchKeyword=Human&diffid=4&supportGrpId=12&difftypeid=2&orgnid=2'
+
+
+show container:
+--------------
+sudo docker ps
+
+sudo docker ps -a
+
+check container start error:
+-----------------------------
+sudo docker logs  --details e9f8aed40b8d
+
+
+check docker application shell:
+--------------------------------
+sudo docker image rm -f ifix-recordRoute{
+		"getparentrecordid",
+		"POST",
+		"/getparentrecordid",
+		handlers.GetParentrecord,
+	},
+sudo docker exec -it ifixrecord /bin/bash
+
+show changes or updation into container:
+-----------------------------------------
+sudo docker diff ifixrecord 
+
+
+Create update container to new image
+-------------------------------------
+
+sudo docker commit ifixrecord ifixrecordnew
+
+
+Check Docker exit code :
+----------------------------
+
+docker inspect c2c769c4b9ef --format='{{.State.ExitCode}}'
+
+
+
+x9gc25Fg8
+
+SELECT FROM_UNIXTIME(milistime) FROM uat.datetable;
+
+SELECT round(UNIX_TIMESTAMP(dateval)) FROM uat.datetable;
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+======================================================
+
+SR SLA --- none
+
+Stask SLA yes
+
+
+Cr SLA -- none
+
+ctask SLA -- none
+========================================================
+
+
+admin
+stupa
+stupa@admin
+
+tcsiccadmin
+tcs_icc
+
+
+
+curl -v localhost:8082/adddocuments -d '{"clientid":1,"mstorgnhirarchyid":1,"recorddifftypeid":2,"recorddiffid":1,"groupid":1,"documentname":"aaa","documentpath":"aaaaa","orginaldocumentname":"aaa"}'
+{"success":true,"message":"","details":1}
+
+curl -v localhost:8082/deletedocuments -d '{"id":1}'
+{"success":true,"message":"","details":0}
+
+
+curl -v localhost:8082/gethigherkey -d '{"clientid":7,"mstorgnhirarchyid":16,"Offset":0,"Limit":5}'
+{"success":true,"message":"","details":0}
+
+
+curl -v localhost:8082/getdocuments -d '{"clientid":1,"mstorgnhirarchyid":1,"Offset":0,"Limit":5}'
+{"success":true,"message":"","details":{"total":1,"values":[{"id":1,"clientid":1,"mstorgnhirarchyid":1,"recorddifftypeid":1,"recorddiffid":1,"groupid":5,"documentname":"AAAA","documentpath":"AAAAAAAAAAA","credentialid":0,"activeflg":1,"offset":0,"limit":0,"clientname":"Stupa","mstorgnhirarchyname":"Stupa","recorddifferentiationtypename":"Category","recorddifferentiationname":"Incidentt","supportgroupname":"ITR SupportGroup","orginaldocumentname":"aaa"}]}}
+
+
+--------------------------
+mapprocessstate
+
+maprecordstatetodifferentiation
+
+
+
+https://www.youtube.com/watch?v=RhEjmHeDNoA
+
+
+select a.id,b.recordid,c.recordtermid,d.recordtrackvalue from mstrecorddifferentiation a,maprecordtorecorddifferentiation b,mststateterm c,trnreordtracking d
+where a.clientid=2 AND a.mstorgnhirarchyid=2 AND a.recorddifftypeid=3 AND a.seqno=4
+AND b.recordid=543 AND b.recorddifftypeid=3 AND a.id= b.recorddiffid AND c.recorddifftypeid=3 AND b.recorddiffid=c.recorddiffid AND
+b.recordid=d.recordid AND d.recordtermid=c.recordtermid order by d.id desc limit 3;
+
+
+
+================================
+
+Status and all related comments / terms to be updated – 
+New to Action – Self assign and stop response clock / Active to Resolved - 
+
+moveworkflow
+
+Assignee Group – if active then only to other group (staus only Active and current grp and change grp should not be same)
+
+Assignee (Asignee should be part of present grp)
+
+UserInternal Worknotes
+
+{transactionid: 1034, mstgroupid: 3, mstuserid: 0, createdgroupid: 1, samegroup: false, userid: 4}
+
+
+https://tecadmin.net/install-go-on-debian/
+export PATH=$PATH:/usr/local/go/bin
+
+
+2021/07/20 06:21:15 SLATabDao.go:61: GetResponsedetails error --> sql: Scan error on column index 0, name "holidate": converting driver.Value type []uint8 ("2021-07-21") to a int64: invalid syntax
+2021/07/20 06:21:15 SLATabDao.go:61: GetResponsedetails error --> sql: Scan error on column index 0, name "holidate": converting driver.Value type []uint8 ("2021-07-21") to a int64: invalid syntax
+2021/07/20 06:21:15 SLATabModel.go:261: is update >>> true
+
+
+
+cd /etc/mysql/percona-server.conf.d/
+
+
+
+https://www.whizlabs.com/learn-kubernetes-with-aws-and-docker/
+
+
+
+
+
+
+=====
+
+WB24AJ1342
+192021220065566498
+
+
+http://20.204.74.38:8083/recordapi/insertmultipletermvalue
+
+{"clientid":2,"mstorgnhirarchyid":2,"recordid":1223,"recordstageid":1314,"details":[{"id":27,"tername":"Resolution SLA Breach Code","recordtermvalue":"Human Error, Tool Issue, Network Issue, Vendor Dependency, Breach at onsite, Incorrect Routing","iscompulsory":1,"termtypename":"Dropdown","termtypeid":2,"insertedvalue":" Tool Issue","seq":0,"termdescription":""},{"id":26,"tername":"Resolution SLA Breach Comments","recordtermvalue":"","iscompulsory":1,"termtypename":"Text","termtypeid":1,"insertedvalue":"aa","seq":0,"termdescription":""},{"id":24,"tername":"Response SLA Breach Code","recordtermvalue":"Human Error, Tool Issue, Network Issue, Vendor Dependency, Breach at onsite, Incorrect Routing","iscompulsory":1,"termtypename":"Dropdown","termtypeid":2,"insertedvalue":" Tool Issue","seq":0,"termdescription":""},{"id":25,"tername":"Response SLA Breach Comments","recordtermvalue":"","iscompulsory":1,"termtypename":"Text","termtypeid":1,"insertedvalue":"aa","seq":0,"termdescription":""}],"recorddifftypeid":2,"recorddiffid":4,"usergroupid":1,"userid":4}
+
+
+
+http://20.204.74.38:8083/recordapi/inserttermvalue
+
+curl -v http://localhost:8083/recordapi/inserttermvalue -d 
+{"clientid":2,"mstorgnhirarchyid":2,"recordid":1223,"recordstageid":1314,"termseq":11,"recorddifftypeid":2,"recorddiffid":4,"usergroupid":1,"foruserid":4,"termvalue":"ascd","termdescription":"","userid":4}
+
+
+ICCM.MFDM
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjEzMywiZXhwIjoxNjM0NzkzMjk0fQ.8M2oawVJtZCz-yqDrrkYRCOoFWC9Zkmnem8Nh7z9qfs
+
+https://iccmuat.ifixcloud.io/api/generatetoken
+
+https://iccmuat.ifixcloud.io/recordapi/getrecordvaluesbyno
+
+{"clientname":"ICCM","mstorgnhirarchyname":"ICCM","recordno":"IN00001174","userid":133}
+
+
+
+
+
+
+
+
+AWS Certificate
+
+https://www.youtube.com/watch?v=dzd4kCvPhXU
+
+
+AWS Lambda ----   
+
+https://www.youtube.com/watch?v=MrBo_m1-gFY
+
+
+AWS RDS --- 
+
+https://www.youtube.com/watch?v=lyBs2rhpVnE
+
+
+AWS Glue --- 
+
+https://www.youtube.com/watch?v=taR2hRZ2AwI
+
+
+https://aws.amazon.com/certification/certified-solutions-architect-associate/?ch=tile&tile=getstarted
+
+https://www.geeksforgeeks.org/java/?ref=leftbar
+
+
+
+
+sudo docker build -t clientdocker .
+
+sudo docker container run -dit --name clientdocker --net=host --publish 8081:8081 clientdocker:latest /bin/bash
+
+
+sudo docker container stop clientdocker && sudo docker container rm clientdocker && sudo docker image rm -f clientdocker
+
+
+
+sudo docker build -t serverdocker .
+
+sudo docker container run -dit --name serverdocker --net=host --publish 8081:8081 serverdocker:latest 
+
+
+sudo docker container stop serverdocker && sudo docker container rm serverdocker && sudo docker image rm -f serverdocker
+
+sudo docker exec -it serverdocker /bin/bash
+
+
+https://blog.kowalczyk.info/article/JyRZ/generating-good-unique-ids-in-go.html
+
+=====================================================================================
+
+Table name : mstgrpcmodelname
+
+column name: a) id (PK)
+	     b) modelname (Like Create record,Status update,Priority Update,Moveworkflow,SLA Calculation etc...)
+	     c) activeflg
+	     d) deleteflg
+
+
+
+Table name : mstgrpcmdeltransactionhistory
+
+column name : a) id (PK)
+	      b) clientid 
+	      c) orgnid 
+	      d) recordid 
+	      e) trnid (an unique nuber generate for model wise every trasaction.)
+	      f) modelid 
+	      g) commitflg 
+	      h) activeflg 
+	      i) deleteflg
+              j) audittransaction
+
+
+Table name : mstmicroservices
+
+column name : a) id, 
+	      b) servicename(RestAPI,GRPC)
+
+This table is a system-defined table and it is used for client and organizations wise enable API service or GRPC service.
+We add one extra column in mstorgnhierarchy table.(The column name is like enablewebservice)
+
+
+CREATE TABLE `mstgrpcmodelname` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `modelname` varchar(100) DEFAULT NULL,
+  `deleteflg` int(1) DEFAULT '0',
+  `activeflg` int(1) DEFAULT '1',
+  `audittransactionid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `mstgrpcmdeltransactionhistory` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `clientid` int(11) DEFAULT NULL,
+  `mstorgnhirarchyid` int(11) DEFAULT NULL,
+  `recordid` int(11) DEFAULT NULL,
+  `trnid` int(11) DEFAULT NULL,
+  `modelid` int(11) DEFAULT NULL,
+  `commitflg` varchar(1) DEFAULT 'N',
+  `deleteflg` int(1) DEFAULT '0',
+  `activeflg` int(1) DEFAULT '1',
+  `audittransactionid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+
+===========================================
+
+
+
+Record Status Update Process:
+=============================
+
+1. Status Update
+
+2. Workflow State Update (GRPC)
+
+3. Status releated terms inserted 
+
+4. Mail notification send. (GRPC)
+
+
+
+
+Record Transaction Tables:
+===========================
+
+1. trnrecord
+
+2. trnrecordstage
+
+3. maprecordtorecorddifferentiation
+
+4. trnreordtracking
+
+5. maprecordasset
+
+6. mstrecordactivitylogs
+
+7. mstparentchildmap
+
+8. mstsladue
+
+9. trnslaentityhistory
+
+10. recordfulldetails
+
+11. mstlinkrecords
+
+
+sudo docker build -t ifix-web . && sudo docker container run -dit --name ifix-web --net=host --publish 8081:80 ifix-web:latest
+
+sudo docker container stop ifix-web && sudo docker container rm ifix-web && sudo docker image rm -f ifix-web
+
+
+sudo docker exec -it ifix-web /etc/nginx/
+
+
+=========================================================================================
+
+
+RecordParentDao.go
+
+RecordDetailsDao.go
+
+Recorddao.go
+
+RecordcommonDao.go
+
+RecordassetDao.go
+
+ExternalAPIDao.go
+
+
+UPDATE 'iFIX'.`lastsladue` p SET definer = `gouser`@`%` WHERE definer=`ifix`@`%`;
+
+SHOW FULL TABLES IN iFIX WHERE TABLE_TYPE LIKE 'VIEW'\G;
+
+SHOW CREATE VIEW lastsladue\G;
+
+
+
+https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams-saa-c02/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_77882236223_._ad_533093955804_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171032_._li_9061814_._pd__._&matchtype=&gclid=CjwKCAiAxJSPBhAoEiwAeO_fP8nC52Pgx_iB6LpkHm5b2eQDow_haGWXTpMs5wbXBA5CIBfF1Oeh5RoCblUQAvD_BwE
+
+=========================================================================================================================
+
+round(UNIX_TIMESTAMP(?)
+FROM_UNIXTIME(a.dateofholiday)
+
+
+
+https://iccmuat.ifixcloud.io/recordapi/getrecordvaluesbyno
+
+{"clientname":"ICCM","mstorgnhirarchyname":"ICCM","recordno":"IN04210000000","userid":2}
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjIsImV4cCI6MTY0Mjc0Nzg5N30.B8Ftzq-LySWyzcgmrxbZni7EgmMRVKW3pupFpqGgKt4
+
+
+
+https://iccmuat.ifixcloud.io/api/generatetoken
+
+{"loginname":"tcsiccadmin","clientid":2,"Mstorgnhirarchyid":2}
+
+
+
+
+https://itsmicc.ifixcloud.io/recordapi/getrecordvaluesbyno
+
+{"clientname":"ICCM","mstorgnhirarchyname":"ICCM","recordno":"IN00000001","userid":302}
+
+Authorization ====>  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjMwMiwiZXhwIjoxNjQyNzQ4MjIzfQ.kNpBYvXpzJvWlzV_K2NRGeZBedNiZ6l_6bG0ozM8md4
+
+
+https://itsmicc.ifixcloud.io/api/generatetoken
+
+{"loginname":"1728012","clientid":2,"Mstorgnhirarchyid":2}
+
+
+
+https://tcsicc.ifixcloud.io/recordapi/getrecordvaluesbydate
+
+{"clientname":"ICCM","mstorgnhirarchyname":"ICCM","fromdate":"2022-01-01 00:00:00","todate":"2022-01-31 22:30:00","userid":302}
+
+
+
+
+https://tcsicc.ifixcloud.io/recordapi/createexternalrecord
+
+https://iccmuat.ifixcloud.io/recordapi/createexternalrecord
+
+{
+"clientname": "ICCM",
+"mstorgnhirarchyname": "ICCM",
+"shortDescription": "Test by external API",
+"longDescription": "Test by external API",
+"requestorid": "1728012",
+"originalid": "1728012",
+"originalgrpname": "ICCM AV Patch Management",
+"TickettypeID":"INCIDENT",
+"userid":302,
+"recordsets": [{
+"id": 1,
+"type": [{
+"labelname": "Company",
+"labelvalue": "India ICC"
+}, {
+"labelname": "Service",
+"labelvalue": "Datacenter Services"
+}, {
+"labelname": "Service Category",
+"labelvalue": "Database"
+}, {
+"labelname": "Service Sub Category",
+"labelvalue": "MySQL"
+}, {
+"labelname": "Service Description",
+"labelvalue": "MySQL - Database Locks Issue"
+}]
+}],
+"additionalfields": [ {
+"value": "AST0021",
+"Termname": "Asset ID"
+}, {
+"value": "10.0.1.1",
+"Termname": "Asset IP"
+}, {
+"value": "Printer",
+"Termname": "Asset Type"
+}]
+}
+
+
+
+http://20.204.74.38:8083/recordapi/getrecordvaluesbyno
+
+{"clientname":"ICCM","mstorgnhirarchyname":"ICCM","recordno":"IN00000976","userid":302}
+
+Authorization ====>  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjMwMiwiZXhwIjoxNjQzNzcxMzAzfQ.NhWIBjIbhQcSAaeAYYEDeniiSpAkfqsvdf7I35KTUQY
+
+
+http://20.204.74.38:8082/api/generatetoken
+
+{"loginname":"1728012","clientid":2,"Mstorgnhirarchyid":2}
+
+episode --- 31
+======================================================================================================================================
+UAT IP : sudo ssh ubuntu@10.5.2.8
+sudo nano /etc/nginx/sites-enabled/uattcsicc_ifixcloud_io.conf
+sudo nginx -t
+
+sudo service nginx restart
+
+/etc/nginx/nginx.conf
+
+/var/log/nginx
+
+sudo cp -R TCSICCIntegrationAPI/ TCSICCIntegrationAPI3/
+
+
+cd ~/TCSICCIntegrationAPI3/src && sudo docker build -t ifix-tcsiccintegrationapi3 . && sudo docker container run -dit --name ifixtcsiccintegrationapi3 --net=host --publish 8089:8089  ifix-tcsiccintegrationapi3:latest && cd ~
+
+
+sudo docker container stop ifixtcsiccintegrationapi && sudo docker container rm ifixtcsiccintegrationapi && sudo docker image rm -f ifix-tcsiccintegrationapi && cd ~/TCSICCIntegrationAPI/src && sudo docker build -t ifix-tcsiccintegrationapi . && sudo docker container run -dit --name ifixtcsiccintegrationapi --net=host --publish 8086:8086  ifix-tcsiccintegrationapi:latest && cd ~
+
+sudo docker exec -it  ifixtcsiccintegrationapi /bin/bash
+
+
+
+2022/03/16 11:33:19 Recorddao.go:1787: Error 1205: Lock wait timeout exceeded; try restarting transaction
+2022/03/16 11:33:19 RecordModel.go:1415: Error 1205: Lock wait timeout exceeded; try restarting transaction
+
+
+sudo docker exec -it  ifixtcsiccintegrationapi /bin/bash
+
+
+=======================================================
+User name: Simanta@ifixtechglobal.com
+Temporary password: Sur91276
+
+Login to this URL ==> https://outlook.live.com/owa/
+
+
+
+
+
+========================================================
+
+
+{"clientid":2,"mstorgnhirarchyid":2,"recordid":64497,"userid":5}
+
+{"clientid":2,"mstorgnhirarchyid":2,"recordid":64497,"userid":5}
+
+
+
+
+
+ALTER TABLE `iFIX`.`recordfulldetails` 
+ADD COLUMN `responsebreachcode` VARCHAR(500) NULL DEFAULT NULL AFTER `lastupdateddate`,
+ADD COLUMN `responsebreachcomment` VARCHAR(1500) NULL DEFAULT NULL AFTER `responsebreachcode`,
+ADD COLUMN `resolutionbreachcode` VARCHAR(500) NULL DEFAULT NULL AFTER `responsebreachcomment`,
+ADD COLUMN `resolutionbreachcomment` VARCHAR(1500) NULL DEFAULT NULL AFTER `resolutionbreachcode`;
+
+
+crontab -e
+*/5 * * * * /usr/local/go/src/ifixSLAstagetableupdateSchedular/runMain.sh
+sudo service cron reload
+sudo service cron restart
+
+
+
+
+cd /godrive
+sudo rm ifixRecord.zip
+sudo zip -r ifixRecord.zip ifixRecord/
+exit
+scp iFIXProdTCSICC@10.5.3.8:/godrive/ifixRecord.zip .
+exit
+scp iFIXProdTCSICC@20.204.51.21:/home/iFIXProdTCSICC/ifixRecord.zip .
+
+============================================
+
+
+
+
+
+
+ebondingmst
+ebondingmodulemst
+ebondingdifferentiationmst
+ebondingdifferentiationmap
+ebondingtransactionlogsmst
+
+
+
+sudo scp -pr ubuntu@20.204.74.38:/home/ubuntu/uat_files/Commitchanges/Recorddao.go .
+
+sudo scp -pr ubuntu@20.204.74.38:/home/ubuntu/uat_files/Commitchanges/RecordcommonDao.go .
+
+
+https://www.youtube.com/watch?v=729Pd-ZQ4uA&list=PL0zysOflRCelmjxj-g4jLr3WKraSU_e8q
+
+
+
+
+Error 1213 Deadlock found when trying to get lock; try restarting transaction
+
+2022/05/30 10:48:27 RecordstatusupdateDao.go:117: parameters --> 2 6 42481 43501
+2022/05/30 10:48:27 RecordstatusupdateStaskModel.go:217: STASK Previous status value is -------------------------------------------------> Inactive
+2022/05/30 10:48:27 RecordstatusupdateStaskModel.go:218: STASK Current status value is -------------------------------------------------> Inactive
+2022/05/30 10:48:27 RecordstatusupdateStaskModel.go:219: <nil>
+2022/05/30 10:48:27 Recorddao.go:2082: Error 1213: Deadlock found when trying to get lock; try restarting transaction
+2022/05/30 10:48:27 RecordstatusupdateStaskModel.go:39: STATUS ID  is -----------> 0
+2022/05/30 10:48:27 RecordstatusModel.go:67: Error is -----------> SQL Execution Error
+2022/05/30 10:48:27 RecordModel.go:887: sb body value is -222222222--> {"success":true,"message":"","details":0}
+2022/05/30 10:48:27 RecordModel.go:2
+
+
+
+==================
+
+https://itsmicc.ifixcloud.io/recordapi/recordcount
+
+{"clientid":2,"mstorgnhirarchyid":24,"recordid":15240,"userid":58}
+
+https://www.baeldung.com/ops/docker-compose-restart-policies#:~:text=on%2Dfailure%5B%3Amax%2Dretries,the%20container%20if%20it%20stops
+
+https://docs.docker.com/config/containers/start-containers-automatically/
+
+
+
+-------------------------------------------------------------------------------------------
+
+
+
+
+NATS Server Document:
+=======================
+
+sudo docker run --rm -d -p 4222:4222 -p 8222:8222 --name nats nats
+
+sudo docker logs -f nats
+
+Publish message:
+
+nats pub events.local hello
+
+Subscribe message:
+
+nats sub events.local
+
+https://docs.nats.io/using-nats/developer/sending/structure
+
+https://docs.nats.io/using-nats/developer/receiving/structure
+
+
+https://www.youtube.com/playlist?list=PL6XT0grm_Tfje2ySztzdhp0HmCjVj5P4z
+
+
+
+
+
+sudo apt-get update 
+sudo apt-get upgrade
+sudo  apt-get install docker.io
+sudo docker pull nats
+wget https://dl.google.com/go/go1.15.7.linux-amd64.tar.gz
+sudo tar -xvf go1.15.7.linux-amd64.tar.gz
+
+wget https://dl.google.com/go/go1.19.5.linux-amd64.tar.gz
+sudo tar -xvf go1.19.5.linux-amd64.tar.gz
+sudo mv go /usr/local
+
+export GOROOT=/usr/local/go 
+export GOPATH=$HOME/Projects/
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+go env -w GO111MODULE=auto
+
+go get github.com/nats-io/nats-server/v2/server
+go get github.com/nats-io/nats.go
+
+
+go install github.com/nats-io/natscli/nats@latest
+
+sudo scp -pr iFIXProdTCSICC@10.5.3.8:/godrive/ifixRecord .
+sudo scp -pr iFIXProdTCSICC@10.5.3.8:/godrive/iFIX_Master .
+sudo scp -pr iFIXProdTCSICC@10.5.3.8:/godrive/sendEmailNotification .
+
+
+https://mp4moviez.wales/9/bengali-movies/list-d.html
+
+
+ALTER TABLE `iFIX`.`trnreordtracking` CHANGE COLUMN `recordtrackvalue` `recordtrackvalue` VARCHAR(5000) COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+
+
+https://www.youtube.com/playlist?list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi
+
+
+
+============ LNT POC SYSTEM =========================================
+
+--- DB details
+
+iFIX-4.0-POC-MYSQL ROOT USER
+USER - root
+Password - iFIXpocdatabase@4321
+
+---- Server details
+
+Public IP - 20.244.115.211
+Private IP - 10.7.0.7
+Username - ifixpoc
+Password - #iFIXPOC@54321
+
+sudo ssh ifixpoc@20.244.115.211
+
+http://20.244.115.211:9000/
+Username - Piyush.Panchal@larsentoubro.com
+
+Client code- l&tcitsecurity
+
+Password – 12345
+
+
+https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
+
+
+
+sudo ssh ubuntu@40.76.99.27
+
+
+40.76.99.27 
+ubuntu 
+Ubuntu@54321
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

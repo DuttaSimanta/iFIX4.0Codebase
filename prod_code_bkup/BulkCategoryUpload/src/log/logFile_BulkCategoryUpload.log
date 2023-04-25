@@ -1,0 +1,10 @@
+2021/12/23 02:16:13 logger.go:54: LogFile : D:/Api's/API/BulkCategoryUpload/src/log/logFile_BulkCategoryUpload.log
+2021/12/23 02:16:13 StartPoint.go:16: Main Started
+2021/12/23 02:16:13 StartPoint.go:29: SV Started
+2021/12/23 02:16:37 dbconfig.go:28: dbConn======>  <nil>
+2021/12/23 02:16:37 dbconfig.go:39: root:root@tcp(localhost:3306)/ifixstaging
+2021/12/23 02:16:37 dbconfig.go:42: Connection Object=====> &{0 0x11c9a230 0 {0 0} [] map[] 0 0 0x11c981c0 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0xf3fe0}
+2021/12/23 02:16:37 dbconfig.go:47: DB Connected!!!
+2021/12/23 02:16:37 dbconfig.go:51: DbConn in Else condition =======> &{0 0x11c9a230 0 {0 0} [] map[] 0 0 0x11c981c0 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0xf3fe0}
+2021/12/23 02:16:39 BulkCatgoryDownloadDao.go:93: Error 1054: Unknown column 'h.changetype' in 'field list'
+2021/12/23 02:16:39 BulkCatagoryDownloadModel.go:49: Error 1054: Unknown column 'h.changetype' in 'field list'

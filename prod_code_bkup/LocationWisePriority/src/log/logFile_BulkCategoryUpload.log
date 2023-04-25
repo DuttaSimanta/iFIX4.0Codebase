@@ -1,0 +1,10 @@
+2021/12/09 13:24:05 logger.go:54: LogFile : /home/mantech/Documents/josim/go/LocationWisePriority/src/log/logFile_BulkCategoryUpload.log
+2021/12/09 13:24:05 StartPoint.go:16: Main Started
+2021/12/09 13:24:41 LocationWisePriorityModel.go:128: In side Locationmodel
+2021/12/09 13:24:41 dbconfig.go:27: dbConn======>  <nil>
+2021/12/09 13:24:41 dbconfig.go:38: root:7980161455@tcp(127.0.0.1:3306)/iFIX
+2021/12/09 13:24:41 dbconfig.go:41: Connection Object=====> &{0 0xc0000b2100 0 {0 0} [] map[] 0 0 0xc00008e420 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x4d9060}
+2021/12/09 13:24:41 dbconfig.go:46: DB Connected!!!
+2021/12/09 13:24:41 dbconfig.go:50: DbConn in Else condition =======> &{0 0xc0000b2100 0 {0 0} [] map[] 0 0 0xc00008e420 false map[] map[] 0 0 0 0 <nil> 0 0 0 0 0x4d9060}
+2021/12/09 13:24:41 LocationWisePriorityDao.go:210: In side CheckDuplicateAsset
+2021/12/09 13:24:41 LocationWisePriorityDao.go:179: In side UpdateLocation

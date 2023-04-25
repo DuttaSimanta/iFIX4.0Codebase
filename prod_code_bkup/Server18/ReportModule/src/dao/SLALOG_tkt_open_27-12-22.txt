@@ -1,0 +1,424 @@
+2022/12/27 16:20:54 RecordDetailsModel.go:409: In side GetRecordDetailsByNo
+2022/12/27 16:20:54 RecordDetailsDao.go:737: In side GetOrgnIDbyrecordID dao model
+2022/12/27 16:20:54 RecordDetailsDao.go:754: In side CheckOrgnIDbyuserID dao model
+2022/12/27 16:20:54 RecordDetailsDao.go:351: In side GetRecordDetails Dao
+2022/12/27 16:20:54 RecordDetailsDao.go:49: In side GetProcessidbyworkingcatid Dao
+2022/12/27 16:20:54 RecordDetailsModel.go:333: In side GetRecordDetails
+2022/12/27 16:20:54 RecordDetailsDao.go:720: In side GetOrgnIDbyrecordID dao model
+2022/12/27 16:20:54 RecordDetailsDao.go:85: In side GetRecordDetails Dao
+2022/12/27 16:20:54 RecordDetailsDao.go:67: In side GetResolRespBreachCount Dao
+2022/12/27 16:20:54 RecordDetailsDao.go:67: In side GetResolRespBreachCount Dao
+2022/12/27 16:20:54 RecordDetailsDao.go:30: In side GetProcessidbyworkingcatid Dao
+2022/12/27 16:20:54 RecordDetailsDao.go:754: In side CheckOrgnIDbyuserID dao model
+2022/12/27 16:20:55 RecordcommonModel.go:1631: In side GetPendingstatustermvalue
+2022/12/27 16:20:55 RecordcommonDao.go:709: In side Getfrequentissues
+2022/12/27 16:20:55 RecordcommonModel.go:1662: In side GetAttachmentfiles
+2022/12/27 16:20:55 RecordcommonDao.go:726: In side GetAttachmentfiles
+2022/12/27 16:20:55 RecordcommonModel.go:1483: In side GetTermvalueagainsttermid
+2022/12/27 16:20:55 RecordcommonDao.go:586: In side Getfrequentissues
+2022/12/27 16:20:55 RecordcommonDao.go:1264: In side GetParentrecordForIM
+2022/12/27 16:20:55 RecordcommonDao.go:313: In side GetAllcommontermvalues
+2022/12/27 16:20:55 RecordcommonDao.go:323: Getchildrecordids rows.next() Error <nil>
+2022/12/27 16:20:55 RecordcommonDao.go:329: In side GetAllcommontermvalues
+2022/12/27 16:20:55 RecordcommonDao.go:339: Getchildrecordids rows.next() Error <nil>
+2022/12/27 16:20:55 RecordcommonDao.go:345: In side GetReopencount
+2022/12/27 16:20:55 RecordcommonDao.go:355: GetReopencount rows.next() Error <nil>
+2022/12/27 16:20:55 RecordstatusupdateDao.go:232: In side Getrecorddiffidbystateid
+2022/12/27 16:20:55 RecordcommonDao.go:879: In side GetRecordcreatedate
+2022/12/27 16:20:55 RecordcommonDao.go:889: GetRecordcreatedate rows.next() Error <nil>
+2022/12/27 16:20:55 slautility.go:748: Database Open Connection Count is in Record Model ----------------------------> 3
+2022/12/27 16:20:55 RecordcommonModel.go:1483: In side GetTermvalueagainsttermid
+2022/12/27 16:20:55 RecordcommonDao.go:586: In side Getfrequentissues
+2022/12/27 16:20:55 RecordcommonModel.go:1177: Daycount value  is >>>>>>>>>>>>>>>>>22>>>>>>>>>>>>>>> 147841 19469
+2022/12/27 16:20:55 RecordstatusupdateDao.go:301: In side Getrecordtypeseq
+2022/12/27 16:20:55 RecordcommonDao.go:361: In side GetFollowupcount
+2022/12/27 16:20:55 RecordcommonDao.go:371: GetFollowupcount rows.next() Error <nil>
+2022/12/27 16:20:55 RecordcommonDao.go:377: In side GetOutboundcount
+2022/12/27 16:20:55 RecordcommonDao.go:387: GetOutboundcount rows.next() Error <nil>
+2022/12/27 16:20:55 RecordcommonHandlers.go:815: []
+2022/12/27 16:20:55 RecordcommonModel.go:1662: In side GetAttachmentfiles
+2022/12/27 16:20:55 RecordcommonDao.go:726: In side GetAttachmentfiles
+2022/12/27 16:20:55 RecordDetailsModel.go:283: In side GetChildRecordsBYParentID
+2022/12/27 16:20:55 RecordstatusupdateDao.go:301: In side Getrecordtypeseq
+2022/12/27 16:20:55 RecordDetailsDao.go:262: In side GetRecordDetails Dao
+2022/12/27 16:20:55 RecordcommonModel.go:2082: In side GetAttachmentfiles
+2022/12/27 16:20:55 RecordcommonDao.go:845: In side GetTermvalueagainsttermid
+2022/12/27 16:20:55 RecordcommonDao.go:858: []
+2022/12/27 16:20:55 RecordassetModel.go:490: In side GetAssetfieldSpecificDataBYRecordID model
+2022/12/27 16:20:55 RecordassetDao.go:1047: In side side RecordassetDao.go GetAssetfieldSpecificDataBYRecordID
+2022/12/27 16:20:55 RecordassetDao.go:1058: Statement :=====> SELECT trnasset.id, mstrecorddifferentiation.id attrid, mstrecorddifferentiation.name name, mapassetdifferentiation.value FROM trnasset JOIN maprecordasset ON trnasset.id=maprecordasset.assetid JOIN mapassetdifferentiation ON maprecordasset.assetid=mapassetdifferentiation.trnassetid JOIN mstrecorddifferentiation ON mapassetdifferentiation.mstdifferentiationid=mstrecorddifferentiation.id JOIN mstrecorddifferentiationtype ON mstrecorddifferentiation.recorddifftypeid=mstrecorddifferentiationtype.id JOIN mstrecorddifferentiationtype difftype ON mstrecorddifferentiationtype.parentid = difftype.id AND difftype.seqno = 5 WHERE trnasset.activeflg=1 AND trnasset.deleteflg=0 AND maprecordasset.activeflg=1 AND maprecordasset.deleteflg=0 AND mapassetdifferentiation.activeflg=1 AND mapassetdifferentiation.deleteflg=0 AND mstrecorddifferentiationtype.activeflg = 1 AND mstrecorddifferentiationtype.deleteflg = 0 AND trnasset.clientid = ? AND trnasset.mstorgnhirarchyid = ? AND maprecordasset.recordid=? AND LOWER(mstrecorddifferentiation.name) IN ('hostname','ipaddress','role') ORDER BY trnasset.id ASC, mstrecorddifferentiation.id ASC
+2022/12/27 16:20:55 RecordassetDao.go:1059: Params :=====> 2 19 147841
+2022/12/27 16:20:55 RecordassetDao.go:1071: Results :=====> []
+2022/12/27 16:20:55 RecordcommonModel.go:1943: In side GetAttachmentfiles
+2022/12/27 16:20:55 RecordcommonDao.go:795: In side GetTermvalueagainsttermid
+2022/12/27 16:20:55 RecordcommonDao.go:808: []
+2022/12/27 16:20:55 slautility.go:748: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:55 RecordstatusupdateDao.go:232: In side Getrecorddiffidbystateid
+2022/12/27 16:20:55 RecordcommonDao.go:879: In side GetRecordcreatedate
+2022/12/27 16:20:55 RecordcommonDao.go:889: GetRecordcreatedate rows.next() Error <nil>
+2022/12/27 16:20:55 RecordcommonModel.go:2000: Daycount value  is >>>>>>>>>>>>>>>>>22>>>>>>>>>>>>>>> 147841 19469
+2022/12/27 16:20:55 RecordcommonModel.go:2008: todatetime value  is >>>>>>>>>>>>>>>>>22>>>>>>>>>>>>>>> 147841 0
+2022/12/27 16:20:55 RecordDetailsModel.go:508: In side GetRecordCatDetails Model
+2022/12/27 16:20:55 RecordDetailsDao.go:547: In side GetAllRecordcategories
+2022/12/27 16:20:55 SLATabHandlers.go:55: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022/12/27 16:20:55 SLATabModel.go:240: GetSLAResolution page.ClientID no ----> 2
+2022/12/27 16:20:55 SLATabModel.go:241: GetSLAResolution page.Mstorgnhirarchyid no ----> 19
+2022/12/27 16:20:55 SLATabModel.go:242: GetSLAResolution page.RecordtypeID no ----> 6644
+2022/12/27 16:20:55 SLATabModel.go:243: GetSLAResolution page.WorkingcatID no ----> 7004
+2022/12/27 16:20:55 SLATabModel.go:244: GetSLAResolution page.PriorityID no ----> 6706
+2022/12/27 16:20:55 SLATabModel.go:245: GetSLAResolution page.RecordID no ----> 147841
+2022/12/27 16:20:55 SLATabModel.go:246: GetSLAResolution page.SupportgroupId --11111111111111111111111--> 2
+2022/12/27 16:20:55 SLATabModel.go:274: Database Open Connection Count is in SLA Model ----------------------------> 3
+2022/12/27 16:20:55 RecordstatusupdateDao.go:748: In side FetchCurrentGrpID
+2022/12/27 16:20:55 RecordstatusupdateDao.go:399: In side GetAllcommontermvalues
+2022/12/27 16:20:55 RecordDetailsDao.go:681: In side GetRecordDirection dao model
+2022/12/27 16:20:55 RecordstatusupdateDao.go:410: Getchildrecordids rows.next() Error <nil>
+2022/12/27 16:20:55 slautility.go:748: Database Open Connection Count is in Record Model ----------------------------> 3
+2022/12/27 16:20:55 RecordDetailsDao.go:567: In side GetAllRecordField
+2022/12/27 16:20:55 slautility.go:512: Database Open Connection Count is in Record Model ----------------------------> 3
+2022/12/27 16:20:55 RecordDetailsDao.go:30: In side GetProcessidbyworkingcatid Dao
+2022/12/27 16:20:55 slautilitydao.go:178: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> {81 2 19 20 6644 6706 0 0 240 14400 0 4320 259200 0 1 0 0      }
+2022/12/27 16:20:55 slautility.go:520:  sla id value is ----------1111111111111111------------------> {81 2 19 20 6644 6706 0 0 240 14400 0 4320 259200 0 1 0 0      }
+2022/12/27 16:20:55 SLATabModel.go:302: 14400
+2022/12/27 16:20:55 SLATabModel.go:303: 259200
+2022/12/27 16:20:55 slautility.go:268: Database Open Connection Count is in Record Model ----------------------------> 3
+2022/12/27 16:20:55 slautilitydao.go:230: GetMstsladue Get Statement Prepare Error <nil>
+2022/12/27 16:20:55 SLATabModel.go:310: sla due record  {132336 2 19 1 147841 1 2022-12-27 16:26:26 2022-12-27 16:26:26 2022-12-27 20:26:26 1672172786 2022-12-30 16:26:26 1672417586 0 0 2022-12-27 10:56:26  1010641 259109 0.035108026 14383 0.11805555 1 0  0 0 0 0 0}
+2022/12/27 16:20:55 SLATabModel.go:331: In time second >>> 259109
+2022/12/27 16:20:55 SLATabModel.go:355: today.Unix()           ----> 1672177855
+2022/12/27 16:20:55 SLATabModel.go:356: TimeParse(duedatetimeresolution).Unix()           ----> 1672417586
+2022/12/27 16:20:55 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  0
+2022/12/27 16:20:55 slautility.go:398: Database Open Connection Count is in Record Model ----------------------------> 3
+2022/12/27 16:20:55 slautility.go:434: Database Open Connection Count is in Record Model ----------------------------> 3
+2022/12/27 16:20:55 slautilitydao.go:505: ************** GetClientDayOfWeek ******************* 3
+2022/12/27 16:20:55 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  0 86400
+2022/12/27 16:20:55 SLAfunctions.go:530: strDate ************************** 2022-12-27
+2022/12/27 16:20:55 SLAfunctions.go:531: strDate ************************** 2022-12-30
+2022/12/27 16:20:55 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  78655 0 0
+2022/12/27 16:20:55 SLAfunctions.go:550: result time >>>>>>>>>>>>> 7745 2022-12-27
+2022/12/27 16:20:55 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  0
+2022/12/27 16:20:55 slautility.go:398: Database Open Connection Count is in Record Model ----------------------------> 3
+2022/12/27 16:20:55 slautility.go:434: Database Open Connection Count is in Record Model ----------------------------> 3
+2022/12/27 16:20:55 RecordcreateDao.go:292: In side GetAssetCount
+2022/12/27 16:20:55 slautilitydao.go:505: ************** GetClientDayOfWeek ******************* 4
+2022/12/27 16:20:55 RecordcreateDao.go:210: In side GetRecordstatusdata SELECT mstrecorddifferentiationtype.id typeid,mstrecorddifferentiationtype.typename,mstrecorddifferentiationtype.seqno typeseq,mstrecorddifferentiation.id,mstrecorddifferentiation.name,mstrecorddifferentiation.seqno FROM mstrecordtype JOIN mstrecorddifferentiation ON mstrecordtype.torecorddiffid=mstrecorddifferentiation.id AND mstrecordtype.torecorddifftypeid=mstrecorddifferentiation.recorddifftypeid AND mstrecordtype.clientid=mstrecorddifferentiation.clientid AND mstrecordtype.mstorgnhirarchyid=mstrecorddifferentiation.mstorgnhirarchyid JOIN mstrecorddifferentiationtype ON mstrecorddifferentiation.recorddifftypeid=mstrecorddifferentiationtype.id WHERE mstrecordtype.activeflg=1 AND mstrecordtype.deleteflg=0 AND mstrecorddifferentiation.activeflg=1 AND mstrecorddifferentiation.deleteflg=0 AND mstrecorddifferentiationtype.activeflg=1 AND mstrecorddifferentiationtype.seqno=2 AND mstrecorddifferentiationtype.deleteflg=0 AND mstrecordtype.clientid=? AND mstrecordtype.mstorgnhirarchyid=? AND mstrecordtype.fromrecorddifftypeid=? AND mstrecordtype.fromrecorddiffid=? ORDER BY mstrecorddifferentiation.seqno ASC LIMIT 1
+2022/12/27 16:20:55 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  0 86400
+2022/12/27 16:20:55 SLAfunctions.go:530: strDate ************************** 2022-12-28
+2022/12/27 16:20:55 SLAfunctions.go:531: strDate ************************** 2022-12-30
+2022/12/27 16:20:55 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  0 0 0
+2022/12/27 16:20:55 SLAfunctions.go:550: result time >>>>>>>>>>>>> 86400 2022-12-28
+2022/12/27 16:20:55 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  0
+2022/12/27 16:20:55 slautility.go:398: Database Open Connection Count is in Record Model ----------------------------> 3
+2022/12/27 16:20:55 RecordDetailsModel.go:623: seq No ==> 2
+2022/12/27 16:20:55 RecordDetailsModel.go:624: catDiffs ==> [{6994 Datacenter Services 2 1 [] false} {7136 Datacenter Services - Alert 2 0 [] false}]
+2022/12/27 16:20:55 RecordDetailsModel.go:623: seq No ==> 3
+2022/12/27 16:20:55 RecordDetailsModel.go:624: catDiffs ==> [{7004 Backup and Restore 3 1 [] false} {7120 Database 3 0 [] false} {7001 Unix 3 0 [] false} {6995 Windows 3 0 [] false}]
+2022/12/27 16:20:55 RecordDetailsModel.go:623: seq No ==> 4
+2022/12/27 16:20:55 RecordDetailsModel.go:624: catDiffs ==> [{7005 Backup Services 4 1 [] false}]
+2022/12/27 16:20:55 slautility.go:434: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:55 RecordcreateDao.go:247: In side GetEstimateEffort
+2022/12/27 16:20:55 slautilitydao.go:505: ************** GetClientDayOfWeek ******************* 5
+2022/12/27 16:20:55 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  0 86400
+2022/12/27 16:20:55 SLAfunctions.go:530: strDate ************************** 2022-12-29
+2022/12/27 16:20:55 SLAfunctions.go:531: strDate ************************** 2022-12-30
+2022/12/27 16:20:55 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  0 0 0
+2022/12/27 16:20:55 SLAfunctions.go:550: result time >>>>>>>>>>>>> 86400 2022-12-29
+2022/12/27 16:20:55 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  0
+2022/12/27 16:20:55 slautility.go:398: Database Open Connection Count is in Record Model ----------------------------> 3
+2022/12/27 16:20:55 RecordDetailsModel.go:692: category value is in if ---> {[{249 Company 1 0 [{6993 TajSats 1 1 [] false}] true} {250 Service 2 0 [{6994 Datacenter Services 2 1 [] false} {7136 Datacenter Services - Alert 2 0 [] false}] false} {251 Service Category 3 0 [{7004 Backup and Restore 3 1 [] false} {7120 Database 3 0 [] false} {7001 Unix 3 0 [] false} {6995 Windows 3 0 [] false}] false} {252 Service Sub Category 4 0 [{7005 Backup Services 4 1 [] false}] false} {253 Service Description 5 0 [{7007 Backup Performance Issue 5 1 [] false} {7006 Backup Failure 5 0 [] false} {7008 Backup Service Issue 5 0 [] false} {7019 Disk utilization 5 0 [] false} {7056 Restore Failure 5 0 [] false} {7089 Server availability 5 0 [] false} {7091 Service availability 5 0 [] false} {7100 Tape drive issue 5 0 [] false} {7101 Tape library issue 5 0 [] false}] false}] [{3 Status 2 16436 Start 0}] 1 [] [] [{234 776 Asset Type Laptop,Printer,Desktop,Tab,Projector 2 Dropdown  2 19} {235 777 Asset ID  1 Text  2 20} {236 778 Asset IP  1 Text  2 21}] {3071 7004 251} 2 1 [02:00] [95.00%] [N/A] false}
+2022/12/27 16:20:55 slautility.go:434: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:55 slautilitydao.go:505: ************** GetClientDayOfWeek ******************* 6
+2022/12/27 16:20:55 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  0 86400
+2022/12/27 16:20:55 SLAfunctions.go:530: strDate ************************** 2022-12-30
+2022/12/27 16:20:55 SLAfunctions.go:531: strDate ************************** 2022-12-30
+2022/12/27 16:20:55 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  0 0 0
+2022/12/27 16:20:55 SLATabModel.go:365: Inside else resolution result 239731
+2022/12/27 16:20:55 SLATabModel.go:368: slarecords.PushTime                 >>> 0
+2022/12/27 16:20:55 SLATabModel.go:392: resolution complete flag  0
+2022/12/27 16:20:55 SLATabModel.go:393: response complete flag  1
+2022/12/27 16:20:55 slautility.go:650: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:55 slautilitydao.go:278: UpdateRemainingPercent query is -------------> UPDATE mstsladue SET remainingtime = ?, completepercent = ?, responseremainingtime = ?, responsepercentage = ? WHERE therecordid = ? AND clientid = ? AND mstorgnhirarchyid = ?
+2022/12/27 16:20:55 slautilitydao.go:279: UpdateRemainingPercent parameter is -------------> 239731 7.511188271604937 14383 0.11805555 147841 2 19
+2022/12/27 16:20:55 SLATabModel.go:403: is update >>> true
+2022/12/27 16:20:55 SLATabHandlers.go:66:
+2022/12/27 16:20:55 SLATabModel.go:13: In side GetSLATabvalues
+2022/12/27 16:20:55 SLATabModel.go:35: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:55 RecordstatusupdateDao.go:783: In side FetchSLADueRow
+2022/12/27 16:20:55 RecordstatusupdateDao.go:62: In side Getrecorddiffidbystateid
+2022/12/27 16:20:55 slautility.go:512: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:55 slautilitydao.go:178: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> {81 2 19 20 6644 6706 0 0 240 14400 0 4320 259200 0 1 0 0      }
+2022/12/27 16:20:55 slautility.go:520:  sla id value is ----------1111111111111111------------------> {81 2 19 20 6644 6706 0 0 240 14400 0 4320 259200 0 1 0 0      }
+2022/12/27 16:20:55 slautility.go:748: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:55 SLATabModel.go:60: YYYY-MM-DD :  2022-12-27
+2022/12/27 16:20:55 SLATabModel.go:66: strDate  value is   ----------------------------> 2022-12-27
+2022/12/27 16:20:55 slautility.go:398: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:55 slautility.go:434: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:55 slautilitydao.go:505: ************** GetClientDayOfWeek ******************* 3
+2022/12/27 16:20:55 SLATabModel.go:82: starttime, endtime, _, isHolliday  value is  ----------------------------> 0 0 false
+2022/12/27 16:20:55 SLATabModel.go:83: dayweemstarttime, dayweemendtime  value is  ----------------------------> 0 86400
+2022/12/27 16:20:55 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  78655 0 0
+2022/12/27 16:20:55 SLATabModel.go:92: resultTime  value is  ----------------------------> 7745
+2022/12/27 16:20:55 SLATabDao.go:15: GetResolutiondetails query --> select a.recordid,b.status,c.priority, e.resolutiontimeinsec ,g.name slaresolutionmeterstatus , coalesce((select DATE_FORMAT(duedatetimeresolution,'%d-%m-%Y %T') from mstsladue where therecordid = ? order by id desc limit 1),'') duedatetimeresolution,coalesce((SELECT IF(isresolutionviolation=1,'Yes','NO') FROM mstsladue where therecordid = ? order by id desc limit 1),'') Resolutionslaviolated from (SELECT clientid, mstorgnhirarchyid, recordid, recorddiffid as ticket_type_id FROM maprecordtorecorddifferentiation m where recorddifftypeid=2 AND recordid=? AND islatest=1) a, (SELECT n.clientid, n.mstorgnhirarchyid, n.recordid, n.recorddiffid as status_id,q.name status FROM maprecordtorecorddifferentiation n, mstrecorddifferentiation q where n.recorddiffid = q.id AND n.recorddifftypeid=3 AND n.recordid=? AND n.islatest=1) b, (SELECT o.clientid, o.mstorgnhirarchyid, o.recordid, o.recorddiffid as priority_id,p.name priority FROM maprecordtorecorddifferentiation o, mstrecorddifferentiation p where o.recorddiffid = p.id AND o.recorddifftypeid=5 AND o.recordid=? AND o.islatest=1) c , mstslafullfillmentcriteria e  , trnslaentityhistory f, mstslaclockdisplayname g where a.recordid = b.recordid and a.recordid = c.recordid and priority_id = e.mstrecorddifferentiationpriorityid and ticket_type_id = e.mstrecorddifferentiationtickettypeid and e.deleteflg = 0 and e.activeflg = 1 and e.mstrecorddifferentiationworkingcatid=0 and a.recordid = f.therecordid and a.clientid=? and a.mstorgnhirarchyid=? and a.recordid  = ? and f.id = (select max(id) from trnslaentityhistory where therecordid = ?) and f.slastartstopindicator = g.seqno and g.metertypeid=2 and g.activeflg=1 AND g.deleteflg=0
+2022/12/27 16:20:55 SLATabDao.go:16: GetResolutiondetails parameters --> 147841 147841 2 19 147841 147841
+2022/12/27 16:20:55 SLATabDao.go:25: Result time value is ---------------------       111111111111111111                   --> 7745
+2022/12/27 16:20:55 SLATabDao.go:28: GetResolutiondetails error --> <nil>
+2022/12/27 16:20:55 SLATabDao.go:40: GetResponsedetails query --> select distinct m.recordid,m.status,n.priority,coalesce(DATE_FORMAT(d.duedatetimeresponse,'%d-%m-%Y %T'),'') duedatetimeresponse , e.responsetimeinsec, g.name slaresponsemeterstatus,coalesce((SELECT IF(isresponseviolation=1,'Yes','NO') FROM mstsladue where therecordid = ? order by id desc limit 1),'') Responseslaviolated from (select a.recordid, a.recorddifftypeid,a.recorddiffid statusid,b.name status,a.clientid,a.mstorgnhirarchyid from maprecordtorecorddifferentiation a,mstrecorddifferentiation b where a.recordid=? and a.recorddifftypeid=3 and a.recorddiffid = b.id order by a.id desc limit 1) m, (select a.recordid, a.recorddifftypeid,a.recorddiffid priorityid,c.name priority,a.clientid,a.mstorgnhirarchyid from maprecordtorecorddifferentiation a, mstrecorddifferentiation c where a.recordid=? and a.recorddifftypeid=5 and a.recorddiffid = c.id  order by a.id desc limit 1) n, mstsladue d , mstslafullfillmentcriteria e,mstslaclockdisplayname g where m.recordid = n.recordid and m.clientid=? and m.mstorgnhirarchyid=? and m.recordid =d.therecordid and n.priorityid = e.mstrecorddifferentiationpriorityid and e.mstrecorddifferentiationtickettypeid = (select max(recorddiffid) from maprecordtorecorddifferentiation where recordid = ? and recorddifftypeid = 2) AND d.isresponsecomplete = g.seqno and g.metertypeid=1 and g.activeflg=1 AND g.deleteflg=0 and e.activeflg=1 AND e.deleteflg=0 order by d.id desc limit 1
+2022/12/27 16:20:55 SLATabDao.go:41: GetResponsedetails parameters --> 147841 147841 2 19 147841 147841 7745
+2022/12/27 16:20:55 SLATabDao.go:50: Result time value is ---------------------       111111111111111111                   --> 7745
+2022/12/27 16:20:55 SLATabDao.go:53: GetResponsedetails error --> <nil>
+2022/12/27 16:20:55 SLATabDao.go:65: GetHolidaydetails query --> select dateofholiday,starttime,endtime from mstclientholiday where (dateofholiday+endtimeinteger) between (select createdatetime from trnrecord where clientid=? AND mstorgnhirarchyid=? AND id=?) AND (select duedatetimeresolutionint from mstsladue where clientid=? AND mstorgnhirarchyid=? AND therecordid=?)
+2022/12/27 16:20:55 SLATabDao.go:66: GetHolidaydetails parameters --> 2 19 147841 2 19 147841
+2022/12/27 16:20:56 SLATabHandlers.go:55: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022/12/27 16:20:56 SLATabModel.go:240: GetSLAResolution page.ClientID no ----> 2
+2022/12/27 16:20:56 SLATabModel.go:241: GetSLAResolution page.Mstorgnhirarchyid no ----> 27
+2022/12/27 16:20:56 SLATabModel.go:242: GetSLAResolution page.RecordtypeID no ----> 10887
+2022/12/27 16:20:56 SLATabModel.go:243: GetSLAResolution page.WorkingcatID no ----> 15012
+2022/12/27 16:20:56 SLATabModel.go:244: GetSLAResolution page.PriorityID no ----> 10917
+2022/12/27 16:20:56 SLATabModel.go:245: GetSLAResolution page.RecordID no ----> 147836
+2022/12/27 16:20:56 SLATabModel.go:246: GetSLAResolution page.SupportgroupId --11111111111111111111111--> 177
+2022/12/27 16:20:56 SLATabModel.go:274: Database Open Connection Count is in SLA Model ----------------------------> 0
+2022/12/27 16:20:56 RecordstatusupdateDao.go:748: In side FetchCurrentGrpID
+2022/12/27 16:20:56 RecordstatusupdateDao.go:399: In side GetAllcommontermvalues
+2022/12/27 16:20:56 RecordstatusupdateDao.go:410: Getchildrecordids rows.next() Error <nil>
+2022/12/27 16:20:56 slautility.go:748: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 slautility.go:512: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 slautilitydao.go:178: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> {150 2 27 36 10887 10917 0 0 1440 86400 0 2880 172800 1 1 0 0      }
+2022/12/27 16:20:56 slautility.go:520:  sla id value is ----------1111111111111111------------------> {150 2 27 36 10887 10917 0 0 1440 86400 0 2880 172800 1 1 0 0      }
+2022/12/27 16:20:56 SLATabModel.go:302: 86400
+2022/12/27 16:20:56 SLATabModel.go:303: 172800
+2022/12/27 16:20:56 slautility.go:268: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 slautilitydao.go:230: GetMstsladue Get Statement Prepare Error <nil>
+2022/12/27 16:20:56 SLATabModel.go:310: sla due record  {132331 2 27 1 147836 1 2022-12-27 13:11:25 2022-12-27 13:11:25 2022-12-29 18:11:25 1672337485 2022-12-31 14:11:25 1672495885 0 0 2022-12-27 07:41:25  1010620 141638 18.033566 55238 36.06713 0 0  0 0 0 0 0}
+2022/12/27 16:20:56 SLATabModel.go:331: In time second >>> 141638
+2022/12/27 16:20:56 SLATabModel.go:355: today.Unix()           ----> 1672177856
+2022/12/27 16:20:56 SLATabModel.go:356: TimeParse(duedatetimeresolution).Unix()           ----> 1672495885
+2022/12/27 16:20:56 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  1
+2022/12/27 16:20:56 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  46800 79200
+2022/12/27 16:20:56 SLAfunctions.go:530: strDate ************************** 2022-12-27
+2022/12/27 16:20:56 SLAfunctions.go:531: strDate ************************** 2022-12-31
+2022/12/27 16:20:56 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  78656 0 0
+2022/12/27 16:20:56 SLAfunctions.go:550: result time >>>>>>>>>>>>> 544 2022-12-27
+2022/12/27 16:20:56 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  1
+2022/12/27 16:20:56 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  28800 79200
+2022/12/27 16:20:56 SLAfunctions.go:530: strDate ************************** 2022-12-28
+2022/12/27 16:20:56 SLAfunctions.go:531: strDate ************************** 2022-12-31
+2022/12/27 16:20:56 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  28800 0 0
+2022/12/27 16:20:56 SLAfunctions.go:550: result time >>>>>>>>>>>>> 50400 2022-12-28
+2022/12/27 16:20:56 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  1
+2022/12/27 16:20:56 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  61200 79200
+2022/12/27 16:20:56 SLAfunctions.go:530: strDate ************************** 2022-12-29
+2022/12/27 16:20:56 SLAfunctions.go:531: strDate ************************** 2022-12-31
+2022/12/27 16:20:56 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  61200 0 0
+2022/12/27 16:20:56 SLAfunctions.go:550: result time >>>>>>>>>>>>> 18000 2022-12-29
+2022/12/27 16:20:56 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  1
+2022/12/27 16:20:56 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  28800 79200
+2022/12/27 16:20:56 SLAfunctions.go:530: strDate ************************** 2022-12-30
+2022/12/27 16:20:56 SLAfunctions.go:531: strDate ************************** 2022-12-31
+2022/12/27 16:20:56 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  28800 0 0
+2022/12/27 16:20:56 SLAfunctions.go:550: result time >>>>>>>>>>>>> 50400 2022-12-30
+2022/12/27 16:20:56 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  1
+2022/12/27 16:20:56 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  28800 79200
+2022/12/27 16:20:56 SLAfunctions.go:530: strDate ************************** 2022-12-31
+2022/12/27 16:20:56 SLAfunctions.go:531: strDate ************************** 2022-12-31
+2022/12/27 16:20:56 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  28800 0 0
+2022/12/27 16:20:56 SLATabModel.go:365: Inside else resolution result 141629
+2022/12/27 16:20:56 SLATabModel.go:368: slarecords.PushTime                 >>> 0
+2022/12/27 16:20:56 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  1
+2022/12/27 16:20:56 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  46800 79200
+2022/12/27 16:20:56 SLAfunctions.go:530: strDate ************************** 2022-12-27
+2022/12/27 16:20:56 SLAfunctions.go:531: strDate ************************** 2022-12-29
+2022/12/27 16:20:56 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  78656 0 0
+2022/12/27 16:20:56 SLAfunctions.go:550: result time >>>>>>>>>>>>> 544 2022-12-27
+2022/12/27 16:20:56 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  1
+2022/12/27 16:20:56 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  28800 79200
+2022/12/27 16:20:56 SLAfunctions.go:530: strDate ************************** 2022-12-28
+2022/12/27 16:20:56 SLAfunctions.go:531: strDate ************************** 2022-12-29
+2022/12/27 16:20:56 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  28800 0 0
+2022/12/27 16:20:56 SLAfunctions.go:550: result time >>>>>>>>>>>>> 50400 2022-12-28
+2022/12/27 16:20:56 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  1
+2022/12/27 16:20:56 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  61200 79200
+2022/12/27 16:20:56 SLAfunctions.go:530: strDate ************************** 2022-12-29
+2022/12/27 16:20:56 SLAfunctions.go:531: strDate ************************** 2022-12-29
+2022/12/27 16:20:56 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  61200 0 0
+2022/12/27 16:20:56 SLATabModel.go:383: Inside else response result 55229
+2022/12/27 16:20:56 SLATabModel.go:392: resolution complete flag  0
+2022/12/27 16:20:56 SLATabModel.go:393: response complete flag  0
+2022/12/27 16:20:56 slautility.go:650: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:56 slautilitydao.go:278: UpdateRemainingPercent query is -------------> UPDATE mstsladue SET remainingtime = ?, completepercent = ?, responseremainingtime = ?, responsepercentage = ? WHERE therecordid = ? AND clientid = ? AND mstorgnhirarchyid = ?
+2022/12/27 16:20:56 slautilitydao.go:279: UpdateRemainingPercent parameter is -------------> 141629 18.03877314814815 55229 36.0775462962963 147836 2 27
+2022/12/27 16:20:56 SLATabModel.go:403: is update >>> true
+2022/12/27 16:20:56 SLATabHandlers.go:66:
+2022/12/27 16:20:58 RecordDetailsModel.go:333: In side GetRecordDetails
+2022/12/27 16:20:58 RecordDetailsDao.go:720: In side GetOrgnIDbyrecordID dao model
+2022/12/27 16:20:58 RecordDetailsDao.go:85: In side GetRecordDetails Dao
+2022/12/27 16:20:58 RecordDetailsDao.go:67: In side GetResolRespBreachCount Dao
+2022/12/27 16:20:58 RecordDetailsDao.go:67: In side GetResolRespBreachCount Dao
+2022/12/27 16:20:58 RecordDetailsDao.go:30: In side GetProcessidbyworkingcatid Dao
+2022/12/27 16:20:58 RecordDetailsDao.go:754: In side CheckOrgnIDbyuserID dao model
+2022/12/27 16:20:58 RecordcommonModel.go:1631: In side GetPendingstatustermvalue
+2022/12/27 16:20:58 RecordcommonDao.go:709: In side Getfrequentissues
+2022/12/27 16:20:58 RecordcommonModel.go:1662: In side GetAttachmentfiles
+2022/12/27 16:20:58 RecordcommonDao.go:726: In side GetAttachmentfiles
+2022/12/27 16:20:58 RecordcommonDao.go:1264: In side GetParentrecordForIM
+2022/12/27 16:20:58 RecordcommonDao.go:313: In side GetAllcommontermvalues
+2022/12/27 16:20:58 RecordcommonDao.go:323: Getchildrecordids rows.next() Error <nil>
+2022/12/27 16:20:58 RecordcommonDao.go:329: In side GetAllcommontermvalues
+2022/12/27 16:20:58 RecordcommonDao.go:339: Getchildrecordids rows.next() Error <nil>
+2022/12/27 16:20:58 RecordcommonDao.go:345: In side GetReopencount
+2022/12/27 16:20:58 RecordcommonDao.go:355: GetReopencount rows.next() Error <nil>
+2022/12/27 16:20:58 RecordstatusupdateDao.go:232: In side Getrecorddiffidbystateid
+2022/12/27 16:20:58 RecordcommonModel.go:1483: In side GetTermvalueagainsttermid
+2022/12/27 16:20:58 RecordcommonDao.go:586: In side Getfrequentissues
+2022/12/27 16:20:58 RecordcommonModel.go:2082: In side GetAttachmentfiles
+2022/12/27 16:20:58 RecordcommonDao.go:845: In side GetTermvalueagainsttermid
+2022/12/27 16:20:58 RecordcommonDao.go:879: In side GetRecordcreatedate
+2022/12/27 16:20:58 RecordcommonDao.go:858: []
+2022/12/27 16:20:58 RecordcommonDao.go:889: GetRecordcreatedate rows.next() Error <nil>
+2022/12/27 16:20:58 slautility.go:748: Database Open Connection Count is in Record Model ----------------------------> 3
+2022/12/27 16:20:58 RecordcommonModel.go:1177: Daycount value  is >>>>>>>>>>>>>>>>>22>>>>>>>>>>>>>>> 147814 167394
+2022/12/27 16:20:58 RecordstatusupdateDao.go:301: In side Getrecordtypeseq
+2022/12/27 16:20:58 RecordcommonDao.go:361: In side GetFollowupcount
+2022/12/27 16:20:58 RecordcommonDao.go:371: GetFollowupcount rows.next() Error <nil>
+2022/12/27 16:20:58 RecordcommonDao.go:377: In side GetOutboundcount
+2022/12/27 16:20:58 RecordcommonDao.go:387: GetOutboundcount rows.next() Error <nil>
+2022/12/27 16:20:58 RecordcommonHandlers.go:815: []
+2022/12/27 16:20:58 RecordDetailsModel.go:283: In side GetChildRecordsBYParentID
+2022/12/27 16:20:58 RecordstatusupdateDao.go:301: In side Getrecordtypeseq
+2022/12/27 16:20:58 RecordassetModel.go:490: In side GetAssetfieldSpecificDataBYRecordID model
+2022/12/27 16:20:58 RecordassetDao.go:1047: In side side RecordassetDao.go GetAssetfieldSpecificDataBYRecordID
+2022/12/27 16:20:58 RecordassetDao.go:1058: Statement :=====> SELECT trnasset.id, mstrecorddifferentiation.id attrid, mstrecorddifferentiation.name name, mapassetdifferentiation.value FROM trnasset JOIN maprecordasset ON trnasset.id=maprecordasset.assetid JOIN mapassetdifferentiation ON maprecordasset.assetid=mapassetdifferentiation.trnassetid JOIN mstrecorddifferentiation ON mapassetdifferentiation.mstdifferentiationid=mstrecorddifferentiation.id JOIN mstrecorddifferentiationtype ON mstrecorddifferentiation.recorddifftypeid=mstrecorddifferentiationtype.id JOIN mstrecorddifferentiationtype difftype ON mstrecorddifferentiationtype.parentid = difftype.id AND difftype.seqno = 5 WHERE trnasset.activeflg=1 AND trnasset.deleteflg=0 AND maprecordasset.activeflg=1 AND maprecordasset.deleteflg=0 AND mapassetdifferentiation.activeflg=1 AND mapassetdifferentiation.deleteflg=0 AND mstrecorddifferentiationtype.activeflg = 1 AND mstrecorddifferentiationtype.deleteflg = 0 AND trnasset.clientid = ? AND trnasset.mstorgnhirarchyid = ? AND maprecordasset.recordid=? AND LOWER(mstrecorddifferentiation.name) IN ('hostname','ipaddress','role') ORDER BY trnasset.id ASC, mstrecorddifferentiation.id ASC
+2022/12/27 16:20:58 RecordassetDao.go:1059: Params :=====> 2 27 147814
+2022/12/27 16:20:58 RecordDetailsDao.go:262: In side GetRecordDetails Dao
+2022/12/27 16:20:58 RecordassetDao.go:1071: Results :=====> []
+2022/12/27 16:20:58 RecordDetailsModel.go:508: In side GetRecordCatDetails Model
+2022/12/27 16:20:58 RecordDetailsDao.go:547: In side GetAllRecordcategories
+2022/12/27 16:20:58 RecordcommonModel.go:1943: In side GetAttachmentfiles
+2022/12/27 16:20:58 RecordcommonDao.go:795: In side GetTermvalueagainsttermid
+2022/12/27 16:20:58 RecordcommonModel.go:1483: In side GetTermvalueagainsttermid
+2022/12/27 16:20:58 RecordcommonDao.go:586: In side Getfrequentissues
+2022/12/27 16:20:58 RecordcommonDao.go:808: []
+2022/12/27 16:20:58 slautility.go:748: Database Open Connection Count is in Record Model ----------------------------> 4
+2022/12/27 16:20:58 RecordstatusupdateDao.go:232: In side Getrecorddiffidbystateid
+2022/12/27 16:20:58 RecordcommonDao.go:879: In side GetRecordcreatedate
+2022/12/27 16:20:58 RecordcommonDao.go:889: GetRecordcreatedate rows.next() Error <nil>
+2022/12/27 16:20:58 RecordcommonModel.go:2000: Daycount value  is >>>>>>>>>>>>>>>>>22>>>>>>>>>>>>>>> 147814 167394
+2022/12/27 16:20:58 RecordcommonModel.go:2008: todatetime value  is >>>>>>>>>>>>>>>>>22>>>>>>>>>>>>>>> 147814 1
+2022/12/27 16:20:58 RecordcommonModel.go:1662: In side GetAttachmentfiles
+2022/12/27 16:20:58 RecordcommonDao.go:726: In side GetAttachmentfiles
+2022/12/27 16:20:58 RecordDetailsDao.go:681: In side GetRecordDirection dao model
+2022/12/27 16:20:58 RecordDetailsDao.go:567: In side GetAllRecordField
+2022/12/27 16:20:58 RecordDetailsDao.go:30: In side GetProcessidbyworkingcatid Dao
+2022/12/27 16:20:58 RecordcreateDao.go:292: In side GetAssetCount
+2022/12/27 16:20:58 RecordcreateDao.go:210: In side GetRecordstatusdata SELECT mstrecorddifferentiationtype.id typeid,mstrecorddifferentiationtype.typename,mstrecorddifferentiationtype.seqno typeseq,mstrecorddifferentiation.id,mstrecorddifferentiation.name,mstrecorddifferentiation.seqno FROM mstrecordtype JOIN mstrecorddifferentiation ON mstrecordtype.torecorddiffid=mstrecorddifferentiation.id AND mstrecordtype.torecorddifftypeid=mstrecorddifferentiation.recorddifftypeid AND mstrecordtype.clientid=mstrecorddifferentiation.clientid AND mstrecordtype.mstorgnhirarchyid=mstrecorddifferentiation.mstorgnhirarchyid JOIN mstrecorddifferentiationtype ON mstrecorddifferentiation.recorddifftypeid=mstrecorddifferentiationtype.id WHERE mstrecordtype.activeflg=1 AND mstrecordtype.deleteflg=0 AND mstrecorddifferentiation.activeflg=1 AND mstrecorddifferentiation.deleteflg=0 AND mstrecorddifferentiationtype.activeflg=1 AND mstrecorddifferentiationtype.seqno=2 AND mstrecorddifferentiationtype.deleteflg=0 AND mstrecordtype.clientid=? AND mstrecordtype.mstorgnhirarchyid=? AND mstrecordtype.fromrecorddifftypeid=? AND mstrecordtype.fromrecorddiffid=? ORDER BY mstrecorddifferentiation.seqno ASC LIMIT 1
+2022/12/27 16:20:58 RecordDetailsModel.go:623: seq No ==> 2
+2022/12/27 16:20:58 RecordDetailsModel.go:624: catDiffs ==> [{15011 TSPL Application Services 2 1 [] false} {14701 Datacenter Services 2 0 [] false} {14977 Datacenter Services - Alert 2 0 [] false} {11408 End User Services 2 0 [] false}]
+2022/12/27 16:20:58 RecordDetailsModel.go:623: seq No ==> 3
+2022/12/27 16:20:58 RecordDetailsModel.go:624: catDiffs ==> [{15012 POS 3 1 [] false} {15015 SAP 3 0 [] false} {15021 SAP - User Management 3 0 [] false}]
+2022/12/27 16:20:58 RecordDetailsModel.go:623: seq No ==> 4
+2022/12/27 16:20:58 RecordDetailsModel.go:624: catDiffs ==> [{15018 TPOS 4 1 [] false} {18781 TPOS - BO 4 0 [] false} {18787 TPOS - TILL 4 0 [] false} {15013 TPOS – Desktop 4 0 [] false}]
+2022/12/27 16:20:58 RecordcreateDao.go:247: In side GetEstimateEffort
+2022/12/27 16:20:58 RecordDetailsModel.go:692: category value is in if ---> {[{398 Company 1 0 [{11407 TSPL 1 1 [] false}] true} {400 Service 2 0 [{15011 TSPL Application Services 2 1 [] false} {14701 Datacenter Services 2 0 [] false} {14977 Datacenter Services - Alert 2 0 [] false} {11408 End User Services 2 0 [] false}] false} {402 Service Category 3 0 [{15012 POS 3 1 [] false} {15015 SAP 3 0 [] false} {15021 SAP - User Management 3 0 [] false}] false} {404 Service Sub Category 4 0 [{15018 TPOS 4 1 [] false} {18781 TPOS - BO 4 0 [] false} {18787 TPOS - TILL 4 0 [] false} {15013 TPOS – Desktop 4 0 [] false}] false} {405 Service Description 5 0 [{15026 Pos are very slow or they hang often 5 1 [] false} {15097 Article key not present 5 0 [] false} {15074 Benefit reversal not happening 5 0 [] false} {15020 Bug - Fix 5 0 [] false} {15055 Cash drawer not opening 5 0 [] false} {15059 DB Error 5 0 [] false} {15073 Failed invoices 5 0 [] false} {15096 Food / beverage printer not working 5 0 [] false} {15052 Functionality 5 0 [] false} {15019 Icon removal pending 5 0 [] false} {15039 MSR benefit not available for selected item 5 0 [] false} {15101 Not able to do Declaration 5 0 [] false} {15090 Other Issues 5 0 [] false} {15036 Partner names are not reflecting in BO 5 0 [] false} {15051 POS printer not working 5 0 [] false} {15056 POS touch screen not accurate 5 0 [] false} {15069 Price not reflecting properly 5 0 [] false} {15086 Promotion not working 5 0 [] false} {15040 Reports not reflecting . 5 0 [] false} {15070 System is not accepting user's password 5 0 [] false} {15064 Tactics not working 5 0 [] false} {15100 Unable to do Day End or Day Begin 5 0 [] false}] false}] [{3 Status 2 16439 Start 0}] 1 [] [] [{689 1446 Asset Type Laptop,Printer,Desktop,Tab,Projector 2 Dropdown  2 19} {690 1447 Asset ID  1 Text  2 20} {691 1448 Asset IP  1 Text  2 21}] {13589 15012 402} 2 1 [00:00] [95.00%] [N/A] false}
+2022/12/27 16:20:58 SLATabHandlers.go:55: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022/12/27 16:20:58 SLATabModel.go:240: GetSLAResolution page.ClientID no ----> 2
+2022/12/27 16:20:58 SLATabModel.go:241: GetSLAResolution page.Mstorgnhirarchyid no ----> 27
+2022/12/27 16:20:58 SLATabModel.go:242: GetSLAResolution page.RecordtypeID no ----> 10887
+2022/12/27 16:20:58 SLATabModel.go:243: GetSLAResolution page.WorkingcatID no ----> 15012
+2022/12/27 16:20:58 SLATabModel.go:244: GetSLAResolution page.PriorityID no ----> 10916
+2022/12/27 16:20:58 SLATabModel.go:245: GetSLAResolution page.RecordID no ----> 147814
+2022/12/27 16:20:58 SLATabModel.go:246: GetSLAResolution page.SupportgroupId --11111111111111111111111--> 177
+2022/12/27 16:20:58 SLATabModel.go:274: Database Open Connection Count is in SLA Model ----------------------------> 2
+2022/12/27 16:20:58 RecordstatusupdateDao.go:748: In side FetchCurrentGrpID
+2022/12/27 16:20:58 RecordstatusupdateDao.go:399: In side GetAllcommontermvalues
+2022/12/27 16:20:58 RecordstatusupdateDao.go:410: Getchildrecordids rows.next() Error <nil>
+2022/12/27 16:20:58 slautility.go:748: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:58 slautility.go:512: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:58 slautilitydao.go:178: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> {149 2 27 36 10887 10916 0 0 240 14400 0 1440 86400 1 1 0 0      }
+2022/12/27 16:20:58 slautility.go:520:  sla id value is ----------1111111111111111------------------> {149 2 27 36 10887 10916 0 0 240 14400 0 1440 86400 1 1 0 0      }
+2022/12/27 16:20:58 SLATabModel.go:302: 14400
+2022/12/27 16:20:58 SLATabModel.go:303: 86400
+2022/12/27 16:20:58 slautility.go:268: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:58 slautilitydao.go:230: GetMstsladue Get Statement Prepare Error <nil>
+2022/12/27 16:20:58 SLATabModel.go:310: sla due record  {132313 2 27 1 147814 1 2022-12-26 08:00:00 2022-12-26 08:00:00 2022-12-26 12:00:00 1672056000 2022-12-28 09:00:00 1672218000 0 0 2022-12-25 17:51:05  1010549 86400 0 14400 0 1 0  0 0 0 0 0}
+2022/12/27 16:20:58 SLATabModel.go:331: In time second >>> 86400
+2022/12/27 16:20:58 SLATabModel.go:333: In time second >>> 86400
+2022/12/27 16:20:58 SLATabModel.go:334: in percentage >>>>>  0
+2022/12/27 16:20:58 SLATabModel.go:355: today.Unix()           ----> 1672012151
+2022/12/27 16:20:58 SLATabModel.go:356: TimeParse(duedatetimeresolution).Unix()           ----> 1672218000
+2022/12/27 16:20:58 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  1
+2022/12/27 16:20:58 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:58 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:58 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  28800 79200
+2022/12/27 16:20:58 SLAfunctions.go:530: strDate ************************** 2022-12-25
+2022/12/27 16:20:58 SLAfunctions.go:531: strDate ************************** 2022-12-28
+2022/12/27 16:20:58 SLAfunctions.go:550: result time >>>>>>>>>>>>> 0 2022-12-25
+2022/12/27 16:20:58 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  1
+2022/12/27 16:20:58 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:58 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:58 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  28800 79200
+2022/12/27 16:20:58 SLAfunctions.go:530: strDate ************************** 2022-12-26
+2022/12/27 16:20:58 SLAfunctions.go:531: strDate ************************** 2022-12-28
+2022/12/27 16:20:58 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  28800 0 0
+2022/12/27 16:20:58 SLAfunctions.go:550: result time >>>>>>>>>>>>> 50400 2022-12-26
+2022/12/27 16:20:58 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  1
+2022/12/27 16:20:58 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:58 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:58 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  46800 79200
+2022/12/27 16:20:58 SLAfunctions.go:530: strDate ************************** 2022-12-27
+2022/12/27 16:20:58 SLAfunctions.go:531: strDate ************************** 2022-12-28
+2022/12/27 16:20:58 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  46800 0 0
+2022/12/27 16:20:58 SLAfunctions.go:550: result time >>>>>>>>>>>>> 32400 2022-12-27
+2022/12/27 16:20:58 SLAfunctions.go:499: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ supportgroupspecific supportgroupspecific $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  1
+2022/12/27 16:20:58 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:58 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 2
+2022/12/27 16:20:58 SLAfunctions.go:523: dayweemstarttime, dayweemendtime             >>>>>>>>>  28800 79200
+2022/12/27 16:20:58 SLAfunctions.go:530: strDate ************************** 2022-12-28
+2022/12/27 16:20:58 SLAfunctions.go:531: strDate ************************** 2022-12-28
+2022/12/27 16:20:58 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  28800 0 0
+2022/12/27 16:20:58 SLATabModel.go:365: Inside else resolution result 86400
+2022/12/27 16:20:58 SLATabModel.go:368: slarecords.PushTime                 >>> 0
+2022/12/27 16:20:58 SLATabModel.go:392: resolution complete flag  0
+2022/12/27 16:20:58 SLATabModel.go:393: response complete flag  1
+2022/12/27 16:20:58 SLATabHandlers.go:66:
+2022/12/27 16:20:59 SLATabModel.go:13: In side GetSLATabvalues
+2022/12/27 16:20:59 SLATabModel.go:35: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:59 RecordstatusupdateDao.go:783: In side FetchSLADueRow
+2022/12/27 16:20:59 RecordstatusupdateDao.go:62: In side Getrecorddiffidbystateid
+2022/12/27 16:20:59 slautility.go:512: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:59 slautilitydao.go:178: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> {149 2 27 36 10887 10916 0 0 240 14400 0 1440 86400 1 1 0 0      }
+2022/12/27 16:20:59 slautility.go:520:  sla id value is ----------1111111111111111------------------> {149 2 27 36 10887 10916 0 0 240 14400 0 1440 86400 1 1 0 0      }
+2022/12/27 16:20:59 slautility.go:748: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:59 SLATabModel.go:60: YYYY-MM-DD :  2022-12-27
+2022/12/27 16:20:59 SLATabModel.go:66: strDate  value is   ----------------------------> 2022-12-27
+2022/12/27 16:20:59 SLATabDao.go:87: In side GetCurrentSupportGRP
+2022/12/27 16:20:59 slautility.go:361: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:59 slautility.go:467: Database Open Connection Count is in Record Model ----------------------------> 0
+2022/12/27 16:20:59 SLATabModel.go:82: starttime, endtime, _, isHolliday  value is  ----------------------------> 0 0 false
+2022/12/27 16:20:59 SLATabModel.go:83: dayweemstarttime, dayweemendtime  value is  ----------------------------> 46800 79200
+2022/12/27 16:20:59 SLAfunctions.go:671: start time >>>>>>>>>>>>>>>>>>>>>>  78659 0 0
+2022/12/27 16:20:59 SLATabModel.go:92: resultTime  value is  ----------------------------> 541
+2022/12/27 16:20:59 SLATabDao.go:15: GetResolutiondetails query --> select a.recordid,b.status,c.priority, e.resolutiontimeinsec ,g.name slaresolutionmeterstatus , coalesce((select DATE_FORMAT(duedatetimeresolution,'%d-%m-%Y %T') from mstsladue where therecordid = ? order by id desc limit 1),'') duedatetimeresolution,coalesce((SELECT IF(isresolutionviolation=1,'Yes','NO') FROM mstsladue where therecordid = ? order by id desc limit 1),'') Resolutionslaviolated from (SELECT clientid, mstorgnhirarchyid, recordid, recorddiffid as ticket_type_id FROM maprecordtorecorddifferentiation m where recorddifftypeid=2 AND recordid=? AND islatest=1) a, (SELECT n.clientid, n.mstorgnhirarchyid, n.recordid, n.recorddiffid as status_id,q.name status FROM maprecordtorecorddifferentiation n, mstrecorddifferentiation q where n.recorddiffid = q.id AND n.recorddifftypeid=3 AND n.recordid=? AND n.islatest=1) b, (SELECT o.clientid, o.mstorgnhirarchyid, o.recordid, o.recorddiffid as priority_id,p.name priority FROM maprecordtorecorddifferentiation o, mstrecorddifferentiation p where o.recorddiffid = p.id AND o.recorddifftypeid=5 AND o.recordid=? AND o.islatest=1) c , mstslafullfillmentcriteria e  , trnslaentityhistory f, mstslaclockdisplayname g where a.recordid = b.recordid and a.recordid = c.recordid and priority_id = e.mstrecorddifferentiationpriorityid and ticket_type_id = e.mstrecorddifferentiationtickettypeid and e.deleteflg = 0 and e.activeflg = 1 and e.mstrecorddifferentiationworkingcatid=0 and a.recordid = f.therecordid and a.clientid=? and a.mstorgnhirarchyid=? and a.recordid  = ? and f.id = (select max(id) from trnslaentityhistory where therecordid = ?) and f.slastartstopindicator = g.seqno and g.metertypeid=2 and g.activeflg=1 AND g.deleteflg=0
+2022/12/27 16:20:59 SLATabDao.go:16: GetResolutiondetails parameters --> 147814 147814 2 27 147814 147814
+2022/12/27 16:20:59 SLATabDao.go:25: Result time value is ---------------------       111111111111111111                   --> 541
+2022/12/27 16:20:59 SLATabDao.go:28: GetResolutiondetails error --> <nil>
+2022/12/27 16:20:59 SLATabDao.go:40: GetResponsedetails query --> select distinct m.recordid,m.status,n.priority,coalesce(DATE_FORMAT(d.duedatetimeresponse,'%d-%m-%Y %T'),'') duedatetimeresponse , e.responsetimeinsec, g.name slaresponsemeterstatus,coalesce((SELECT IF(isresponseviolation=1,'Yes','NO') FROM mstsladue where therecordid = ? order by id desc limit 1),'') Responseslaviolated from (select a.recordid, a.recorddifftypeid,a.recorddiffid statusid,b.name status,a.clientid,a.mstorgnhirarchyid from maprecordtorecorddifferentiation a,mstrecorddifferentiation b where a.recordid=? and a.recorddifftypeid=3 and a.recorddiffid = b.id order by a.id desc limit 1) m, (select a.recordid, a.recorddifftypeid,a.recorddiffid priorityid,c.name priority,a.clientid,a.mstorgnhirarchyid from maprecordtorecorddifferentiation a, mstrecorddifferentiation c where a.recordid=? and a.recorddifftypeid=5 and a.recorddiffid = c.id  order by a.id desc limit 1) n, mstsladue d , mstslafullfillmentcriteria e,mstslaclockdisplayname g where m.recordid = n.recordid and m.clientid=? and m.mstorgnhirarchyid=? and m.recordid =d.therecordid and n.priorityid = e.mstrecorddifferentiationpriorityid and e.mstrecorddifferentiationtickettypeid = (select max(recorddiffid) from maprecordtorecorddifferentiation where recordid = ? and recorddifftypeid = 2) AND d.isresponsecomplete = g.seqno and g.metertypeid=1 and g.activeflg=1 AND g.deleteflg=0 and e.activeflg=1 AND e.deleteflg=0 order by d.id desc limit 1
+2022/12/27 16:20:59 SLATabDao.go:41: GetResponsedetails parameters --> 147814 147814 2 27 147814 147814 541
+2022/12/27 16:20:59 SLATabDao.go:50: Result time value is ---------------------       111111111111111111                   --> 541
+2022/12/27 16:20:59 SLATabDao.go:53: GetResponsedetails error --> <nil>
+2022/12/27 16:20:59 SLATabDao.go:65: GetHolidaydetails query --> select dateofholiday,starttime,endtime from mstclientholiday where (dateofholiday+endtimeinteger) between (select createdatetime from trnrecord where clientid=? AND mstorgnhirarchyid=? AND id=?) AND (select duedatetimeresolutionint from mstsladue where clientid=? AND mstorgnhirarchyid=? AND therecordid=?)
+2022/12/27 16:20:59 SLATabDao.go:66: GetHolidaydetails parameters --> 2 27 147814 2 27 147814
